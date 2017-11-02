@@ -66,7 +66,7 @@ add_filter( 'gform_confirmation_anchor', '__return_true' );
 
 function custom_css() {
   $here = get_template_directory_uri();
-  wp_enqueue_style( 'beefy', $here . "/css/beefy.css",array(), 'all');
+  wp_enqueue_style( 'beefy', $here . "/css/beefy.css";
   wp_enqueue_style('beefy');
 }
 
