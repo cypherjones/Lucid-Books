@@ -64,6 +64,14 @@ add_filter( 'gform_confirmation_anchor', '__return_true' );
   add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 
 
+function custom_css() {
+  $here = get_template_directory_uri();
+  wp_enqueue_style( 'beefy', $here . "/css/beefy.css",array(), 'all');
+  wp_enqueue_style('beefy');
+}
+
+add_action( 'wp_enqueue_style', 'custom_css');
+
 // Register Custom Navigation Walker 
 
   require_once ('wp_bootstrap_navwalker.php');
