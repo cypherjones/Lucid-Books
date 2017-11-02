@@ -70,7 +70,7 @@ function custom_css() {
   wp_enqueue_style('beefy');
 }
 
-add_action( 'wp_enqueue_style', 'custom_css');
+add_action( 'wp_enqueue_scripts', 'custom_css');
 
 // Register Custom Navigation Walker 
 
