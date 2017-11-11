@@ -182,7 +182,11 @@
                           </div> 
                         </section>
 
-                  <?php if ( get_row_layout() == 'share') : ?>
+                  <?php 
+
+                  endif;
+
+                  if ( get_row_layout() == 'share') : ?>
 
                     <section>
                       <div class="container">
