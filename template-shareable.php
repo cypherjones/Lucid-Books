@@ -193,7 +193,9 @@
                         <div class="row">
                           <div class="col-md-12">
                             <div class="share-container">
-                              foo
+                              <div class="shareable image-box">
+                                <img src="http://placehold.it/200x200" alt="shareable image of author books">
+                              </div>
                             </div>
                           </div>
                         </div>
