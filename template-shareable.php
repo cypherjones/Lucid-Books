@@ -194,9 +194,9 @@
                           <div class="col-md-12">
                             <div class="share-container">
                               <div class="shareable image-box">
-                                <div class="col-md-2">
-                                  <img src="http://placehold.it/200x200" alt="shareable image of author books">
-                                </div>
+                                <?php if (have_rows('shared_images')) : while (have_rows('shared_images')) : the_row();  ?>
+                                  <img src="http://placehold.it/200x200" alt="shareable images">
+                                <?php endwhile; endif; ?>
                               </div>
                             </div>
                           </div>
