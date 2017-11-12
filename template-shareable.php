@@ -196,7 +196,7 @@
                               <div class="shareable image-box">
                                 <div class="row">
                                 <?php if (have_rows('shared_images')) : while (have_rows('shared_images')) : the_row();  ?>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-sm-6 col-xs-12">
                                       <img src="http://placehold.it/200x200" alt="shareable images">
                                     </div>
                                 <?php endwhile; endif; ?>
