@@ -3,10 +3,10 @@
 jQuery(document).ready(function($){
 	$('.shareable-img').on('click', function(){
 		
-		$('.shareable-popup').addClass('open');
+		$('.shareable-popup', this).addClass('open');
 
 	});
 	$('.close-popup').on('click', function(){
-		$('.shareable-popup').removeClass('open');
+		$('.shareable-popup', this).removeClass('open');
 	})
 });
