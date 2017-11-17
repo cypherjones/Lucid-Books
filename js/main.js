@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
 	.on('click', function(){
 
 		$(this)
-		.parent()
+		.parent('.shareable-img')
 		.find('.shareable-popup', this)
 		.removeClass('open');
 
