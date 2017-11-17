@@ -7,5 +7,10 @@ jQuery(document).ready(function($){
 		.find('.shareable-popup', this)
 		.addClass('open');
 	})
-	$('close-popup').removeClass('open');
+	$('.close-popup')
+	.on('click', function(){
+		$('.shareable-img')
+		.find('.shareable-popup', this)
+		.removeClass('open');
+	})
 });
