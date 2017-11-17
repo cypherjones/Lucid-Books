@@ -200,7 +200,7 @@
 
                                     <div class="col-md-2 col-sm-6 col-xs-12">
                                       <img class="shareable-img" src="http://placehold.it/400x400" alt="shareable images">
-                                      <div class="popup">
+                                      <div class="shareable-popup">
                                         <img src="http://placehold.it/400x400" alt="full shareable image">
                                       </div>
                                     </div>
