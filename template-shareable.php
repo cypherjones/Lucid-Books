@@ -201,6 +201,7 @@
                                     <div class="col-md-2 col-sm-6 col-xs-12">
                                       <img class="shareable-img" src="https://placehold.it/400x400" alt="shareable images">
                                       <div class="shareable-popup">
+                                        <div class="close">x</div>
                                         <img src="https://placehold.it/400x400" alt="full shareable image">
                                       </div>
                                     </div>

@@ -6,4 +6,7 @@ jQuery(document).ready(function($){
 		$('.shareable-popup').addClass('open');
 
 	});
+	$('.close').on('click', function(){
+		$('.shareable-popup').removeClass('open');
+	})
 });
