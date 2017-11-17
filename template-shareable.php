@@ -195,11 +195,18 @@
                             <div class="share-container">
                               <div class="shareable image-box">
                                 <div class="row">
+
                                 <?php if (have_rows('shared_images')) : while (have_rows('shared_images')) : the_row();  ?>
+
                                     <div class="col-md-2 col-sm-6 col-xs-12">
                                       <img class="shareable-img" src="http://placehold.it/400x400" alt="shareable images">
+                                      <div class="popup">
+                                        <img src="http://placehold.it/400x400" alt="full shareable image">
+                                      </div>
                                     </div>
+
                                 <?php endwhile; endif; ?>
+
                                 </div>
                               </div>
                             </div>
