@@ -9,3 +9,7 @@ $('.slick-slide').each(function() {
     $(this).css('margin', Math.ceil((maxHeight-$(this).height())/2) + 'px 0');
   }
 });
+
+$('.shareable-img').on('click', function(){
+	console.log('yep, we got you.');
+})
