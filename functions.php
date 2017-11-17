@@ -56,9 +56,13 @@ add_filter( 'gform_confirmation_anchor', '__return_true' );
 
 // Register CSS 
 
+  $beefy_get_template_uri = get_template_directory_uri();
+
   function theme_name_scripts() {
   	wp_enqueue_style( 'style-name', get_stylesheet_uri() );
-    wp_enqueue_script( 'jquery' ); 
+    wp_register_script('beefy', $beefy_get_template_uri . '/js/main.js', 'jquery', '1.0', TRUE);
+    wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'beefy' );  
   }
 
   add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
