@@ -9,8 +9,11 @@ jQuery(document).ready(function($){
 	})
 	$('.close-popup')
 	.on('click', function(){
-		$('.shareable-img')
+
+		$(this)
+		.parent()
 		.find('.shareable-popup', this)
 		.removeClass('open');
+
 	})
 });
