@@ -1,10 +1,10 @@
 
 
 jQuery(document).ready(function($){
-	$('shareable-img')
+	$('.shareable-img')
 	.on('click', function(){
 		$(this)
-		.find('shareable-popup', this)
+		.find('.shareable-popup', this)
 		.addClass('open');
 	})
 });
