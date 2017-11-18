@@ -27,9 +27,9 @@ jQuery(document).ready(function($){
 
 	$('.shareable-popup').each(function(){
 
-		$('.close-popup').on('click', function(){
+		$(this).find('.close-popup').on('click', function(){
 
-			$('.shareable-popup').removeClass('.open');
+			$('.shareable-popup').removeClass('open');
 
 		})
 
