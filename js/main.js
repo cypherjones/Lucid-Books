@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
 	// })
 	$('.shareable-img').each(function(){
 
-		$(this).find('.shareable-popup').on('click', function(){
+		$(this).on('click', function(){
 			console.log('yes');
 		});
 
