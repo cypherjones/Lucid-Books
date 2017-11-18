@@ -23,6 +23,12 @@ jQuery(document).ready(function($){
 
 		});
 
+		$(this).find('.close-popup').on('click', function(){
+
+			$('.shareable-popup').removeClass('open');
+
+		})
+
 	});
 
 });
