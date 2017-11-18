@@ -15,16 +15,13 @@ jQuery(document).ready(function($){
 	// 	.removeClass('open');
 
 	// })
+	$popup = $('#share-pop');
 
-		$('.shareable-img').each(function(){
+	$popup.find('.shareable-img').on('click', function(){
 
-			$(this).on('click', function(){
+		$popup.find('.shareable-popup', this).addClass('open');
 
-				$('.shareable-popup').removeClass('open')l
-
-			});
-
-		});
+	});
 
 
 	$('.close-popup').each(function(){

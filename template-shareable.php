@@ -193,7 +193,7 @@
                         <div class="row">
                           <div class="col-md-12">
                             <div class="share-container">
-                              <div class="shareable image-box">
+                              <div id='share-pop' class="shareable image-box">
                                 <div class="row">
 
                                 <?php if (have_rows('shared_images')) : while (have_rows('shared_images')) : the_row();  ?>
