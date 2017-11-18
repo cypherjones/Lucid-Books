@@ -17,11 +17,11 @@ jQuery(document).ready(function($){
 	// })
 	$popup = $('#share-pop');
 
-	$popup.find('.shareable-img').on('click', function(){
-
-		$popup.find('.shareable-popup', this).addClass('open');
-
-	});
+	$popup.find('.shareable-img').each(function(){
+		$(this).on('click', function(){
+			$('.shareable-popup', this).addClass('open').
+		})
+	})
 
 
 	$('.close-popup').each(function(){
