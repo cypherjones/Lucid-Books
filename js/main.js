@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
 
 		$(this).on('click', function(){
 
-			$('.shareable-popup',this).removeClass('open');
+			$('.shareable-popup').removeClass('open');
 
 		})
 
