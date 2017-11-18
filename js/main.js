@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
 
 		$(this).on('click', function(){
 			
-			$('.shareable-popup').addClass('open');
+			$('.shareable-popup',this).addClass('open');
 
 		});
 
@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
 
 		$(this).on('click', function(){
 
-			$('.shareable-popup').removeClass('open');
+			$('.shareable-popup',this).removeClass('open');
 
 		})
 
