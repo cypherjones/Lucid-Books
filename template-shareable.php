@@ -203,7 +203,7 @@
                                         <img src="https://placehold.it/400x400" alt="shareable images">
                                         <div class="shareable-popup">
                                           <div class="shareable-box">
-                                            <div class="close-popup"><p>X</p></div>
+                                            <div class="close-popup">close</div>
                                             <img src="https://placehold.it/400x400" alt="full shareable image">
                                           </div>
                                         </div>

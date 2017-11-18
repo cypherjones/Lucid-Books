@@ -25,14 +25,14 @@ jQuery(document).ready(function($){
 
 	});
 
-	$('.shareable-popup').each(function(){
+	$('.close-popup').each(function(){
 
-		$(this).find('.close-popup').on('click', function(){
+		$(this).on('click', function(){
 
-			$('.shareable-popup', this).removeClass('open');
+			$('.shareable-popup').removeClass('open');
 
 		})
 
 	})
-
+ 
 });
