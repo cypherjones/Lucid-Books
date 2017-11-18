@@ -15,12 +15,12 @@ jQuery(document).ready(function($){
 	// 	.removeClass('open');
 
 	// })
-$('.shareable-img').each(function(){
+	$('.shareable-img').each(function(){
 
-	$(this).find('.shareable-popup').on('click', function(){
-		console.log('yes');
-	})
+		$(this).find('.shareable-popup').on('click', function(){
+			console.log('yes');
+		});
 
-})
+	});
 
- 
+});
