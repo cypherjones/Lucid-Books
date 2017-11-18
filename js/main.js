@@ -16,9 +16,13 @@ jQuery(document).ready(function($){
 
 	// })
 
-		$('.shareable-img').on('click', function(){
-			
-			$('.shareable-popup').addClass('open');
+		$('.shareable-img').each(function(){
+
+			$(this).on('click', function(){
+
+				$('.shareable-popup').removeClass('open')l
+
+			});
 
 		});
 
@@ -29,8 +33,8 @@ jQuery(document).ready(function($){
 
 			$('.shareable-popup').removeClass('open');
 
-		})
+		});
 
-	})
+	});
  
 });
