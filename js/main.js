@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
 
 	$popup.find('.shareable-img').each(function(){
 		$(this).on('click', function(){
-			$('.shareable-popup', this).addClass('open');
+			$(this).next('.shareable-popup').addClass('open');
 		})
 	})
 
