@@ -20,7 +20,8 @@ jQuery(document).ready(function($){
 	$popup.find('.shareable-img').each(function(){
 		$(this).on('click', function(e){
 			e.preventDefault();
-			$(this).next('.shareable-popup').addClass('open');
+			// $(this).next('.shareable-popup').addClass('open');
+			$(this).show(500);
 			console.log("testing bitch")
 		});
 
