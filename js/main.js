@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
 			console.log("testing bitch")
 		});
 		if($('.shareable-popup.open').length == 0) {
-			$('.shareable-popup img').fadeIn('slow');
+			$('.shareable-box img').fadeIn('slow');
 		}
 	});
 	$('.close-popup').each(function(){
