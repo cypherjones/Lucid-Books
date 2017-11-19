@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
 			$(this).next('.shareable-popup').addClass('open');
 			console.log("testing bitch")
 		});
-		if($('.shareable-popup.open').length == 0) {
+		if($('.shareable-popup.open').length < 0) {
 			$('.shareable-box img').fadeIn('slow');
 		}
 	});
