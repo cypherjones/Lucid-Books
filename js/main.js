@@ -18,8 +18,9 @@ jQuery(document).ready(function($){
 	$popup = $('#share-pop');
 
 	$popup.find('.shareable-img').each(function(){
-		$(this).on('click', function(){
-			// $(this).next('.shareable-popup').addClass('open');
+		$(this).on('click', function(e){
+			e.preventDefault();
+			$(this).next('.shareable-popup').addClass('open');
 			console.log("testing bitch")
 		})
 	})
