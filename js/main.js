@@ -21,7 +21,7 @@ jQuery(document).ready(function($){
 		$(this).on('click', function(e){
 			e.preventDefault();
 			// $(this).next('.shareable-popup').addClass('open');
-			$(this).next('shareable-popup').show("slow");
+			$(this).next('shareable-popup').toggle("slow");
 			console.log("testing bitch")
 		});
 
