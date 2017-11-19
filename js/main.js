@@ -21,10 +21,11 @@ jQuery(document).ready(function($){
 		$(this).on('click', function(e){
 			e.preventDefault();
 			$(this).next('.shareable-popup').addClass('open');
-			$(this).next('shareable-popup').toggle("slow");
 			console.log("testing bitch")
 		});
-
+		if('.shareable-popup.open').length == 0 {
+			$('.shareable-popup.open').fadeIn('slow');
+		}
 	});
 	$('.close-popup').each(function(){
 		$(this).on('click', function(){
