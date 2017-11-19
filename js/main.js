@@ -25,6 +25,7 @@ jQuery(document).ready(function($){
 		});
 		if($('.shareable-popup.open').length < 0) {
 			$('.shareable-box img').fadeIn('slow');
+			console.log('length is something')
 		}
 	});
 	$('.close-popup').each(function(){
