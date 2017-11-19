@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
 
 	$popup.find('.shareable-img').each(function(){
 		$(this).on('click', function(e){
-			e.preventDefault();
+			// e.preventDefault();
 			$(this).next('.shareable-popup').addClass('open').delay(300).fadeIn(1000);
 			console.log("testing bitch")
 		});
