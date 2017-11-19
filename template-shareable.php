@@ -199,7 +199,7 @@
                                 <?php if (have_rows('shared_images')) : while (have_rows('shared_images')) : the_row();  ?>
 
                                     <div class="col-md-2 col-sm-6 col-xs-12">
-                                     <div class="shareable-img">
+                                     <div class="shareable-img" onclick="show()">
                                         <img src="https://placehold.it/400x400" alt="shareable images">
                                       </div>
                                       <div class="shareable-popup">

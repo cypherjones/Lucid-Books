@@ -30,4 +30,9 @@ jQuery(document).ready(function($){
 		});
 	});
  
+	function show() {
+		$(this).next('.shareable-popup').addClass('open');
+	}
+
+
 });
