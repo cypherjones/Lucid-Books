@@ -18,21 +18,14 @@ jQuery(document).ready(function($){
 	$popup = $('#share-pop');
 
 	$popup.find('.shareable-img').each(function(){
-		// $(this).on('click', function(e){
-		// 	e.preventDefault();
-		// 	$(this).next('.shareable-popup').addClass('open');
-		// 	console.log("testing bitch")
-		// })
-
-	})
-
-	$('.shareable-img').each(function(){
 		$(this).on('click', function(e){
 			e.preventDefault();
-			$('.shareable-popup').addClass('open');
-			console.log('we\'re working');
-		})
-	})
+			$(this).next('.shareable-popup').addClass('open');
+			$('.shareable-popup.open').fadeIn(300);
+			console.log("testing bitch")
+		});
+
+	});
 	$('.close-popup').each(function(){
 		$(this).on('click', function(){
 			$('.shareable-popup').removeClass('open');
