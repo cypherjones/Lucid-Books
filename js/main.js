@@ -27,7 +27,8 @@ jQuery(document).ready(function($){
 	})
 
 	$('.shareable-img').each(function(){
-		$(this).on('click', function(){
+		$(this).on('click', function(e){
+			e.preventDefault();
 			$('.shareable-popup').addClass('open');
 		})
 	})
