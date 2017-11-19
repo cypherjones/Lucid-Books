@@ -31,7 +31,12 @@ jQuery(document).ready(function($){
 	});
  
 	function show() {
-		$(this).next('.shareable-popup').addClass('open');
+		$popup = $('#share-pop');
+
+		$popup.find('.shareable-img').each(function(){
+			$(this).on('click', function(){
+				$(this).next('.shareable-popup').addClass('open');
+			}
 	}
 
 
