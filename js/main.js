@@ -30,6 +30,7 @@ jQuery(document).ready(function($){
 		$(this).on('click', function(e){
 			e.preventDefault();
 			$('.shareable-popup').addClass('open');
+			console.log('we\'re working');
 		})
 	})
 	$('.close-popup').each(function(){
