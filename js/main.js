@@ -19,7 +19,8 @@ jQuery(document).ready(function($){
 
 	$popup.find('.shareable-img').each(function(){
 		$(this).on('click', function(){
-			$(this).next('.shareable-popup').addClass('open');
+			// $(this).next('.shareable-popup').addClass('open');
+			console.log("testing bitch")
 		})
 	})
 
@@ -30,15 +31,6 @@ jQuery(document).ready(function($){
 		});
 	});
  
-	function show() {
-		$popup = $('#share-pop');
-
-		$popup.find('.shareable-img').each(function(){
-			$(this).on('click', function(){
-				$(this).next('.shareable-popup').addClass('open');
-			});
-		});
-	};
 
 
 });
