@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
 
 			if($(this).next('.shareable-popup:visible').length == 0) {
 
-				$(this).fadeIn("slow");
+				$(this).next('shareable-popup').fadeIn("slow");
 
 				console.log('length is something')
 
