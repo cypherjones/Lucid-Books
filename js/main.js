@@ -18,9 +18,16 @@ jQuery(document).ready(function($){
 	const $popup = $('#share-pop');
 
 
-	$('.shareable-img').each(function(i){
-			num = i++;
+	$('.shareable-img').each(function(e,i){
+
+		let i = 1,
+			  num = i++;
+
 		$(this).find('img').attr('data-num', num);
+
+		e.on('click', function(){
+			console.log('got a clicker');
+		})
 	})
 
 
