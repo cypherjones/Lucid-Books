@@ -20,17 +20,20 @@ jQuery(document).ready(function($){
 
 
 	$('#popup-container').find('.shareable-img').each(function(i){
-		// set var for img loop
-	  let num = i++;
-	  // add the var loop number to img
-		$(this).find('img').attr('data-num', num);
-		//find the nearest popup
 
 
 		$(this).on('click', function(){
 			
 			console.log('got a clicker' + num);
 
+			if($(this).children('.shareable-popup:visible').length == 0) {
+
+
+				$popup.find('.shareable-popup img').fadeIn("slow");
+				$this = $popup.find().html();
+				console.log('length is something ' + $this);
+
+			}
 			
 		})
 	})
