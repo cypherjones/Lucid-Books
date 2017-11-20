@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
 
 			$(this).next('shareable-popup').each(function(){
 
-				if($('shareable-popup:visible').length == 0 ) {
+				if($(this).next('shareable-popup:visible').length == 0 ) {
 					console.log('count');
 				}
 
