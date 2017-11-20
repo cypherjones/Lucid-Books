@@ -26,7 +26,7 @@ jQuery(document).ready(function($){
 		$(this).find('img').attr('data-num', num);
 
 		$(this).on('click', function(){
-			console.log('got a clicker');
+			console.log('got a clicker' + num);
 		})
 	})
 
