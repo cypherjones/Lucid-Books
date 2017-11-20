@@ -20,9 +20,13 @@ jQuery(document).ready(function($){
 
 	$('#popup-container').each(function(){
 
-		$(this).children('.shareable-img').on('click', function(){
+		$(this).children('.shareable-img').each(function(){
 
-			console.log('foo');
+			$(this).on('click', function(){
+
+				console.log('foo');
+
+			})
 
 		})
 	})
