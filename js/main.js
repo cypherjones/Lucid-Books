@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
 	const $popup = $('.shareable-popup');
 	  
 
-	$('#share-pop').finc('#popup-container').each(function(){
+	$('#share-pop').find('#popup-container').each(function(){
 
 		$(this).children('.shareable-img').each(function(){
 
