@@ -16,8 +16,7 @@ jQuery(document).ready(function($){
 
 	// })
 	const $popup = $('.shareable-popup'),
-
-	let i = 1;
+	      i = 1;
 
 
 	$('.shareable-img').each(function(i){
