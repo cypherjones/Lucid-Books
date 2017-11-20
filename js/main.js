@@ -37,7 +37,7 @@ jQuery(document).ready(function($){
 
 
 				$popup.find('.shareable-popup img').fadeIn("slow");
-				$this = $(this).html();
+				$this = $popup.html();
 				console.log('length is something ' + $this);
 
 			}
