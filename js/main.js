@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
 
 		$(this).on('click', function(){
 			
-			console.log('got a clicker' + num);
+			console.log('got a clicker');
 
 			if($(this).children('.shareable-popup:visible').length == 0) {
 
