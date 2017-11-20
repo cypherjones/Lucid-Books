@@ -25,17 +25,17 @@ jQuery(document).ready(function($){
 	  // add the var loop number to img
 		$(this).find('img').attr('data-num', num);
 		//find the nearest popup
-		$currentPop = $popup.find('.shareable-popup').each(function(){
-			$popThis = $(this);
-			console.log($popThis);
-		});
+
 
 		$(this).on('click', function(){
 			console.log('got a clicker' + num);
 		})
 	})
 
-
+	$currentPop = $popup.find('.shareable-popup').each(function(){
+			$popThis = $(this);
+			console.log($popThis);
+		});
 
 	$popup.find('.shareable-img').each(function(){
 
