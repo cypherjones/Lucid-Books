@@ -32,7 +32,7 @@ jQuery(document).ready(function($){
 		})
 	})
 
-	$currentPop = $popup.find('.shareable-popup').each(function(){
+	$popup.find('.shareable-popup').each(function(){
 			$popThis = $(this);
 			console.log($popThis);
 		});
