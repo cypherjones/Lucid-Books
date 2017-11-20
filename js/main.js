@@ -25,15 +25,18 @@ jQuery(document).ready(function($){
 
 			// $(this).next('.shareable-popup').addClass('open');
 
-			console.log("testing bitch")
+			$('shareable-popup').each(function(){
 
-			if($('.shareable-popup:visible').length == 0) {
+				if($('.shareable-popup:visible').length == 0) {
 
 				$('.shareable-popup').fadeIn("slow");
 
 				console.log('length is something')
 
 			}
+
+
+			})
 		});
 	});
 	$('.close-popup').each(function(){
