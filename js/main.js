@@ -17,10 +17,11 @@ jQuery(document).ready(function($){
 	// })
 	const $popup = $('#share-pop');
 
+	let i = 1;
+
 
 	$('.shareable-img').each(function(i){
 
-		i = 1;
 	  let num = i++;
 
 		$(this).find('img').attr('data-num', num);
