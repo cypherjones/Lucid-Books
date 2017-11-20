@@ -21,11 +21,7 @@ jQuery(document).ready(function($){
 
 		$(this).on('click', function(e){
 
-			e.preventDefault();
-
-			// $(this).next('.shareable-popup').addClass('open');
-
-			// console.log("testing bitch")
+		
 
 			if($(this).next('.shareable-popup:visible').length == 0) {
 
