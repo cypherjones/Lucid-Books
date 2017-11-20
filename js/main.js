@@ -18,6 +18,15 @@ jQuery(document).ready(function($){
 	const $popup = $('.shareable-popup');
 	  
 
+	$('#popup-container').each(function(){
+
+		$(this).find('.shareable-img').on('click', function(){
+
+			console.log('foo');
+
+		})
+	})
+
 
 	$('#popup-container').find('.shareable-img').each(function(i){
 
