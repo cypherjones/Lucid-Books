@@ -21,11 +21,15 @@ jQuery(document).ready(function($){
 
 		$(this).on('click', function(e){
 
-		
+			e.preventDefault();
 
-			if($(this).next('.shareable-popup:visible').length == 0) {
+			// $(this).next('.shareable-popup').addClass('open');
 
-				$(this).fadeIn("slow");
+			// console.log("testing bitch")
+
+			if($(this).children('.shareable-popup:visible').length == 0) {
+
+				$(this).children('.shareable-popup').fadeIn("slow");
 
 				console.log('length is something')
 
