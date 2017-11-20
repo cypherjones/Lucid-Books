@@ -27,9 +27,9 @@ jQuery(document).ready(function($){
 
 			console.log("testing bitch")
 
-			if($('.shareable-popup').length == 0) {
+			if($('.shareable-popup:visible').length == 0) {
 
-				$('.shareable-popup:visible').fadeIn("slow");
+				$('.shareable-popup').fadeIn("slow");
 
 				console.log('length is something')
 
