@@ -25,9 +25,9 @@ jQuery(document).ready(function($){
 
 			// $(this).next('.shareable-popup').addClass('open');
 
-			console.log("testing bitch")
+			// console.log("testing bitch")
 
-			if($('.shareable-popup:visible').length == 0) {
+			if($(this).next('.shareable-popup:visible').length == 0) {
 
 				$('.shareable-popup').fadeIn("slow");
 
@@ -39,6 +39,7 @@ jQuery(document).ready(function($){
 	$('.close-popup').each(function(){
 		$(this).on('click', function(){
 			$('.shareable-popup').removeClass('open');
+			console.log('closed');
 		});
 	});
  
