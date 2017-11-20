@@ -15,11 +15,12 @@ jQuery(document).ready(function($){
 	// 	.removeClass('open');
 
 	// })
-	const $popup = $('.shareable-popup'),
-	      i = 1;
+	const $popup = $('.shareable-popup');
+	  
 
 
 	$('.shareable-img').each(function(i){
+		const i = 1;
 		// set var for img loop
 	  let num = i++;
 	  // add the var loop number to img
