@@ -33,10 +33,10 @@ jQuery(document).ready(function($){
 
 			$('#share-pop').find('.shareable-popup').each(function(){
 
-				$popThis = $(this);
+				$popThis = $(this).html();
 
 				console.log($popThis);
-				
+
 			});
 		})
 	})
