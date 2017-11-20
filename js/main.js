@@ -18,7 +18,10 @@ jQuery(document).ready(function($){
 	$popup = $('#share-pop');
 
 
-	$('.shar')
+	$('.shareable-img').each(function(i){
+			num = i++;
+		$(this).find('img').attr('data-num', num);
+	})
 
 	$popup.find('.shareable-img').each(function(){
 
@@ -34,7 +37,7 @@ jQuery(document).ready(function($){
 
 
 				$(this).find('.shareable-popup').fadeIn("slow");
-				$this = $(this).text();
+				$this = $(this).html();
 				console.log('length is something ' + $this);
 
 			}
