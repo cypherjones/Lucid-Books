@@ -31,9 +31,12 @@ jQuery(document).ready(function($){
 			
 			console.log('got a clicker' + num);
 
-			$popup.find('.shareable-popup').each(function(){
+			$('#share-pop').find('.shareable-popup').each(function(){
+
 				$popThis = $(this);
+
 				console.log($popThis);
+				
 			});
 		})
 	})
