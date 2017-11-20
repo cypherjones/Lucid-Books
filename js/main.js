@@ -15,15 +15,19 @@ jQuery(document).ready(function($){
 	// 	.removeClass('open');
 
 	// })
-	const $popup = $('#share-pop');
+	const $popup = $('#popup-container');
 
 
-	$('.shareable-img').each(function(i){
+	$popup.find('.shareable-img').each(function(i){
 			num = i++;
 		$(this).find('img').attr('data-num', num);
 	})
 
+
+
 	$popup.find('.shareable-img').each(function(){
+
+		let thisImg = $(this).find('')
 
 		$(this).on('click', function(e){
 
@@ -37,7 +41,7 @@ jQuery(document).ready(function($){
 
 
 				$popup.find('.shareable-popup img').fadeIn("slow");
-				$this = $popup.html();
+				$this = $popup.find().html();
 				console.log('length is something ' + $this);
 
 			}
