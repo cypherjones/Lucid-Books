@@ -23,11 +23,11 @@ jQuery(document).ready(function($){
 
 			e.preventDefault();
 
-			$(this).next('.shareable-popup').addClass('open');
+			// $(this).next('.shareable-popup').addClass('open');
 
 			console.log("testing bitch")
 
-			if($('.shareable-popup').length == 1) {
+			if($('.shareable-popup').length == 0) {
 
 				$('.shareable-popup:visible').fadeIn("slow");
 
