@@ -15,10 +15,10 @@ jQuery(document).ready(function($){
 	// 	.removeClass('open');
 
 	// })
-	const $popup = $('#popup-container');
+	const $popup = $('#share-pop');
 
 
-	$popup.find('.shareable-img').each(function(i){
+	$('.shareable-img').each(function(i){
 			num = i++;
 		$(this).find('img').attr('data-num', num);
 	})
