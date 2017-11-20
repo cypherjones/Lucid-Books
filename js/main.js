@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
 
 	$('#popup-container').each(function(){
 
-		$(this).find('.shareable-img').on('click', function(){
+		$(this).children('.shareable-img').on('click', function(){
 
 			console.log('foo');
 
