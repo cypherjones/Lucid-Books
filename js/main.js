@@ -28,14 +28,16 @@ jQuery(document).ready(function($){
 
 
 		$(this).on('click', function(){
+			
 			console.log('got a clicker' + num);
+
+			$popup.find('.shareable-popup').each(function(){
+				$popThis = $(this);
+				console.log($popThis);
+			});
 		})
 	})
 
-	$popup.find('.shareable-popup').each(function(){
-			$popThis = $(this);
-			console.log($popThis);
-		});
 
 	$popup.find('.shareable-img').each(function(){
 
