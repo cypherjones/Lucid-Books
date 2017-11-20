@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
 	  
 
 
-	$('.shareable-img').each(function(i){
+	$('#popup-container').find('.shareable-img').each(function(i){
 		// set var for img loop
 	  let num = i++;
 	  // add the var loop number to img
@@ -31,13 +31,7 @@ jQuery(document).ready(function($){
 			
 			console.log('got a clicker' + num);
 
-			$('#share-pop').find('.shareable-popup', this).each(function(){
-
-				$popThis = $(this).html();
-
-				console.log($popThis);
-
-			});
+			
 		})
 	})
 
