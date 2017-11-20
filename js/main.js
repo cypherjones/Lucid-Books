@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
 
 	$('.shareable-img').each(function(e,i){
 
-		i = 1,
+		i = 1;
 	  let num = i++;
 
 		$(this).find('img').attr('data-num', num);
