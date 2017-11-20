@@ -20,13 +20,15 @@ jQuery(document).ready(function($){
 
 
 	$('.shareable-img').each(function(i){
-		const i = 1;
 		// set var for img loop
 	  let num = i++;
 	  // add the var loop number to img
 		$(this).find('img').attr('data-num', num);
 		//find the nearest popup
-
+		$currentPop = $popup.find('.shareable-popup').each(function(){
+			$popThis = $(this);
+			console.log($popThis);
+		});
 
 		$(this).on('click', function(){
 			console.log('got a clicker' + num);
