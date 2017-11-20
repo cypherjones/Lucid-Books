@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
 
 
 				$(this).fadeIn("slow");
-				$this = $(this).find.html();
+				$this = $(this).html();
 				console.log('length is something ' + $this);
 
 			}
