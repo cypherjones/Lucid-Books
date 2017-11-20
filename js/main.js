@@ -30,7 +30,7 @@ jQuery(document).ready(function($){
 			if($(this).children('.shareable-popup:visible').length == 0) {
 
 
-				$('.shareable-popup').fadeIn("slow");
+				$(this).find('.shareable-popup').fadeIn("slow");
 				$this = $(this).html();
 				console.log('length is something ' + $this);
 
