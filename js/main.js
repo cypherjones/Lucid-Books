@@ -17,6 +17,9 @@ jQuery(document).ready(function($){
 	// })
 	$popup = $('#share-pop');
 
+
+	$('.shar')
+
 	$popup.find('.shareable-img').each(function(){
 
 		$(this).on('click', function(e){
@@ -30,8 +33,8 @@ jQuery(document).ready(function($){
 			if($(this).children('.shareable-popup:visible').length == 0) {
 
 
-				$(this).fadeIn("slow");
-				$this = $(this).html();
+				$(this).find('.shareable-popup').fadeIn("slow");
+				$this = $(this).text();
 				console.log('length is something ' + $this);
 
 			}
