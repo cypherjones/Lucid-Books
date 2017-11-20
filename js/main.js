@@ -18,13 +18,21 @@ jQuery(document).ready(function($){
 	$popup = $('#share-pop');
 
 	$popup.find('.shareable-img').each(function(){
+
 		$(this).on('click', function(e){
+
 			e.preventDefault();
+
 			$(this).next('.shareable-popup').addClass('open');
+
 			console.log("testing bitch")
+
 			if($('.shareable-popup').length == 0) {
-				$('.shareable-popup:visible').fadeIn('slow');
+
+				$('.shareable-popup:visible').fadeIn("slow");
+
 				console.log('length is something')
+
 			}
 		});
 	});
