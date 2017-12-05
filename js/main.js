@@ -6,11 +6,12 @@ jQuery(document).ready(function($){
 
  	let i = 0;
 
- 	// for (var i = this.length - 1; i >= 0; i--) {
- 	// 	Things[i]
- 	// }
+ 	if ($this.length > 0) {
+ 		i++;
+ 	}
 
- 	console.log($this + i);
+
+ 	console.log(i);
 
  });
 });
