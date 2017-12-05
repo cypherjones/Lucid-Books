@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	
- $('.image-box').each(function(){
+ $('.popup-container').each(function(){
 
  	$this = $(this).html();
 
