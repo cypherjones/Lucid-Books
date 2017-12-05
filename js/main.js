@@ -12,9 +12,9 @@ jQuery(document).ready(function($){
 			.attr('id', `popup-${index}`)
 			.addClass('active');
 
-			let $this = $('.shareable-popup.active');
+			let $thisId = $('.shareable-popup.active').attr('id');
 
-			let $id = $this.next('.shareable-popup').attr('id');
+			// let $id = $this.next('.shareable-popup').attr('id');
 
 			$(this).find('.next-pop').on('click', function(){
 				// set the next var
@@ -25,7 +25,7 @@ jQuery(document).ready(function($){
 				})
 
 				//debug
-				console.log('boo' + $id);
+				console.log('boo' + $thisId);
 			});
 
 		});
