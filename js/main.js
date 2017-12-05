@@ -8,12 +8,20 @@ jQuery(document).ready(function($){
 		});
 
 		$(this).find('.shareable-popup', this).each(function(index, value){
-			$(this).attr('id', `popup-${index}`);
+			$(this)
+			.attr('id', `popup-${index}`)
+			.addClass('active');
+
 		});
 
 	});
 
 	$('.next-pop').on('click', this, function(){
+		$('.shareable-popup').fadeOut(function(){
+			$(this).removeClass('in');
+
+		})
+		// debug
 		console.log('boo');
 	});
 
