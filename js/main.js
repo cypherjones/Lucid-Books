@@ -1,6 +1,9 @@
 jQuery(document).ready(function($){
 
-	$.each($('#popup-container'), function(index, value){
-		console.log(index);
+	$('.share-container').each(function(){
+
+		$(this).find('#popup-container', this).each(function(index, value){
+			console.log(index)
+		})
+
 	});
-});
