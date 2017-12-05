@@ -7,11 +7,11 @@ jQuery(document).ready(function($){
 			$(this).attr('data-target', `#popup-${index}`);
 		});
 
-		$(this).find('.shareable-popup').each(function(index, value){
+		$(this).find('.shareable-popup', this).each(function(index, value){
 			$(this)
-			.attr('id', `popup-${index}`)
-			.addClass('active');
+			.attr('id', `popup-${index}`);
 
+			
 			let $thisId = $('.shareable-popup.active').next().attr('id');
 
 			// let $id = $this.next('.shareable-popup').attr('id');
