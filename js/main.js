@@ -12,9 +12,9 @@ jQuery(document).ready(function($){
 			.attr('id', `popup-${index}`)
 			.addClass('active');
 
-			$this = $('.shareable-popup');
+			let $this = $('.shareable-popup.active');
 
-			$id = $this.next('.shareable-popup').attr('id');
+			let $id = $this.next('.shareable-popup').attr('id');
 
 			$(this).find('.next-pop').on('click', function(){
 				// set the next var
