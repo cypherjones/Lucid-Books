@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
 			$(this).each(function(){
 
 			let n = $(this);
-			let $next = n.next().text('foo');
+			let $next = n.nextAll().text('foo');
 
 			let l = n.attr('id');
 			let m = $next.attr('id');
