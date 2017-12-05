@@ -12,26 +12,10 @@ jQuery(document).ready(function($){
 			.attr('id', `popup-${index}`)
 			.addClass('active');
 
+			$(this).find('.next-pop').on('click', function(){
+				console.log('boo');
+			});
+
 		});
-
 	});
-
-	$('.next-pop').on('click', this, function(){
-		//set the next element variable
-		let _next = $('.shareable-popup.fade').next();
-
-		// remove the active classes
-		$('.shareable-popup', this).fadeOut(function(){
-			
-			$(this).removeClass('in active');
-
-			$(this).next().fadeIn(function(){
-				$(this).addClass('in active');
-			})
-
-		})
-		// debug
-		console.log('boo');
-	});
-
 }); 
