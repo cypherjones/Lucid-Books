@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 	
  $('image-box').each(function(){
 
- 	$this = $(this).text();
+ 	$this = $(this).html();
 
  	let i = 0;
 
