@@ -198,7 +198,7 @@
 
                                 <?php if (have_rows('shared_images')) : while (have_rows('shared_images')) : the_row();  ?>
 
-                                    <div class="col-md-2 col-sm-3 col-xs-12">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
                                       
                                       <div class="shareable-img" data-toggle="modal">
                                         <img src="https://placehold.it/400x400" alt="shareable images">
@@ -211,6 +211,8 @@
                                               <img src="https://placehold.it/400x400" alt="full shareable image">
                                             </div>
                                           </div>
+                                          <div class="btn previous-pop">previous</div>
+                                          <div class="btn next-pop">next</div>
                                         </div>
                                       </div>
                                     </div>
