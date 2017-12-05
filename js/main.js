@@ -2,10 +2,10 @@ jQuery(document).ready(function($){
 
 	let sum = 0;
 	
- $('#popup-container').each(this,function(index, value){
+ $('#popup-container').each(function(n){
 
- 		sum+= value; 
+ 	n++;
 
  });
- console.log(sum);
+ console.log(sum + n);
 });
