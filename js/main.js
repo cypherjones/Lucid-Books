@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	
- $('.popup-container').each(function(){
+ $('#popup-container').each(function(){
 
  	$this = $(this).text();
 
