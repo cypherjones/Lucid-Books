@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
 			.attr('id', `popup-${index}`)
 			.addClass('active');
 
-			$(this).find('.next-pop').on('click', function(){
+			$(this).find('.next-pop', this).on('click', function(){
 				console.log('boo');
 			});
 
