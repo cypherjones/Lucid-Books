@@ -13,7 +13,10 @@ jQuery(document).ready(function($){
 
 		$('.next-pop').on('click', function(){
 			let $n = $(this).closest('.shareable-popup').attr('id');
-			console.log($n);
+
+			let $m = $n.closest('.shareable-popup').attr('id');
+
+			console.log($n $m);
 		})
 
 
