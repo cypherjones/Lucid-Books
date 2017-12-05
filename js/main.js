@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 
 			$this = $('.shareable-popup.modal.fade');
 
-			$(this).find('.next-pop', this).on('click', function(){
+			$(this).find('.next-pop').on('click', function(){
 				// set the next var
 				let n = $this.next();
 				//remove classes
