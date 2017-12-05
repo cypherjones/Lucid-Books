@@ -1,11 +1,6 @@
 jQuery(document).ready(function($){
 
-	let n = 0;
-	
- $('#popup-container').each(function(n){
-
- 	n++;
-
- });
- console.log(n);
+	$.each($('#product-box'), function(index, value){
+		console.log(index);
+	});
 });
