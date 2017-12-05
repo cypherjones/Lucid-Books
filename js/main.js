@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
 
 	$('.next-pop').on('click', this, function(){
 		//set the next element variable
-		let _next = $('.shareable-popup.fade.in.active').next();
+		let _next = $('.shareable-popup.fade').next();
 
 		// remove the active classes
 		$('.shareable-popup').fadeOut(function(){
