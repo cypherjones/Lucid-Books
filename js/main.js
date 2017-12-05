@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	
- $('image-box').each(function(){
+ $('.image-box').each(function(){
 
  	$this = $(this).html();
 
@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
  	// 	Things[i]
  	// }
 
- 	console.log($this);
+ 	console.log($this + i);
 
  });
 });
