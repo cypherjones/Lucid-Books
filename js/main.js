@@ -13,11 +13,12 @@ jQuery(document).ready(function($){
 
 		$('.next-pop').on('click', function(){
 			let $n = $(this).closest('.shareable-popup').attr('id');
-			let _n = $(this).closest('.shareable-popup').nextAll('.modal');
+			
+			let $ne = $(this).next().html().
 
 			let $m = _n.attr('id');
 
-			console.log($n + $m);
+			console.log($n + $ne);
 		})
 
 
