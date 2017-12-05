@@ -9,10 +9,12 @@ jQuery(document).ready(function($){
 
 		$(this).find('.shareable-popup', this).each(function(index, value){
 			$(this).attr('id', `popup-${index}`);
+
+			let _n = $
 		});
 
 			let n = $('.shareable-popup');
-			let $next = n.next();
+			let $next = n.next('fade');
 
 			let l = n.attr('id');
 			let m = $next.attr('id');
