@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
 			let $n = $(this).closest('.shareable-popup').attr('id');
 			let _n = $(this).closest('.shareable-popup').nextAll('.modal');
 
-			let $m = _n.closest('.shareable-popup').next('.shareable-popup').attr('id');
+			let $m = _n.attr('id');
 
 			console.log($n + $m);
 		})
