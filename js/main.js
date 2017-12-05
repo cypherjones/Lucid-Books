@@ -12,7 +12,17 @@ jQuery(document).ready(function($){
 			.attr('id', `popup-${index}`)
 			.addClass('active');
 
+			$this = $(this);
+
 			$(this).find('.next-pop', this).on('click', function(){
+				// set the next var
+				let n = $this.next();
+				//remove classes
+				n.fadeIn(function(){
+					$(this).removeClass('in active');
+				})
+
+				//debug
 				console.log('boo');
 			});
 
