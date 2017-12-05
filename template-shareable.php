@@ -200,10 +200,8 @@
 
                                     <div class="col-md-2 col-sm-6 col-xs-12">
                                       
-                                      <div class="shareable-img">
-                                        <div data-toggle="modal">
+                                      <div class="shareable-img" data-toggle="modal">
                                           <img src="https://placehold.it/400x400" alt="shareable images">
-                                        </div>
                                       </div>
                                       <div class="shareable-popup modal fade">
                                         <div class="shareable-box">
