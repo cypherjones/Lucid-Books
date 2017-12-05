@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
 
 			$(this).find('.next-pop').on('click', function(){
 				// set the next var
-				let n = $this.next();
+				// let n = $this.next();
 				//remove classes
 				n.fadeIn(function(){
 					$(this).removeClass('in active');
