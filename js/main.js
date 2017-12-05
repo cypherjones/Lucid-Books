@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
 			.attr('id', `popup-${index}`)
 			.addClass('active');
 
-			$this = $(this);
+			$this = $('.shareable-popup.modal.fade');
 
 			$(this).find('.next-pop', this).on('click', function(){
 				// set the next var
