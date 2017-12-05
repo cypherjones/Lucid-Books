@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
 			
 			let $ne = $(this).next().html().
 
-			let $m = _n.attr('id');
+			// let $m = _n.attr('id');
 
 			console.log($n + $ne);
 		})
