@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 	
  $('.popup-container').each(function(){
 
- 	$this = $(this).html();
+ 	$this = $(this).text();
 
  	let i = 0;
 
