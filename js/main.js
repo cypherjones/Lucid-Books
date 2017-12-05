@@ -11,8 +11,8 @@ jQuery(document).ready(function($){
 			$(this).attr('id', `popup-${index}`);
 		});
 
-		let n = $('.shareable-popup');
-			let $next = n.eq(n.index(this) + 1);
+			let n = $('.shareable-popup');
+			let $next = n.next();
 
 			let l = n.attr('id');
 			let m = $next.attr('id');
