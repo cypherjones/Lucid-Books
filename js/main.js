@@ -21,13 +21,15 @@ jQuery(document).ready(function($){
 		let _next = $('.shareable-popup.fade').next();
 
 		// remove the active classes
-		$('.shareable-popup').fadeOut(function(){
+		$('.shareable-popup', this).fadeOut(function(){
 			
 			$(this).removeClass('in active');
-		})
-		_next.fadeIn(function(){
+
+			$(this).next().fadeIn(function(){
 				$(this).addClass('in active');
 			})
+
+		})
 		// debug
 		console.log('boo');
 	});
