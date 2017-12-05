@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
 
 	$('.next-pop').on('click', this, function(){
 		$('.shareable-popup').fadeOut(function(){
-			$(this).removeClass('in');
+			$(this).removeClass('in active');
 
 		})
 		// debug
