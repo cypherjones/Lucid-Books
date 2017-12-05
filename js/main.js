@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
 			$(this).each(function(){
 
 			let n = $(this);
-			let $next = n.eq(n.index(this) + 1);
+			let $next = n.next('.modal');
 
 			let l = n.attr('id');
 			let m = $next.attr('id');
