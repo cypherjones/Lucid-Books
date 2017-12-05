@@ -9,23 +9,17 @@ jQuery(document).ready(function($){
 
 		$(this).find('.shareable-popup', this).each(function(index, value){
 			$(this).attr('id', `popup-${index}`);
-			let n = $(this).next().attr('id');
-
-
-			// let $id = $this.next('.shareable-popup').attr('id');
-
-			$(this).find('.next-pop').on('click', function(){
-				// set the next var
-				// let n = $this.next();
-				//remove classes
-				// n.fadeIn(function(){
-				// 	$(this).removeClass('in active');
-				// })
-
-				//debug
-				console.log('boo ' + n);
-			});
-
 		});
+
+		let n = $('.shareable-popup');
+			let $next = n.eq(n.index(this) + 1);
+
+			let l = n.attr('id');
+			let m = $next.attr('id');
+
+			console.log(`${l} is before ${m}`)
+
+
+
 	});
 }); 
