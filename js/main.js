@@ -4,14 +4,11 @@ jQuery(document).ready(function($){
 
  	$this = $(this).text();
 
- 	let i = 0;
+ 	
 
- 	if ($this.length > 0) {
- 		i++;
- 	}
-
-
- 	console.log(i);
+ 	for (let i = 0; i < 0; i++;) {
+ 		console.log(i);
+ 	}	
 
  });
 });
