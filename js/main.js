@@ -17,9 +17,17 @@ jQuery(document).ready(function($){
 	});
 
 	$('.next-pop').on('click', this, function(){
+		//set the next element variable
+		let _next = $('.shareable-popup.fade.in.active').next();
+
+		// remove the active classes
 		$('.shareable-popup').fadeOut(function(){
+			
 			$(this).removeClass('in active');
 
+			_next.fadeIn(function(){
+				$(this).addClass('in active');
+			})
 		})
 		// debug
 		console.log('boo');
