@@ -1,15 +1,11 @@
 jQuery(document).ready(function($){
+
+	let sum = 0;
 	
- $('#popup-container').each(function(){
+ $('#popup-container').each(function(index, value){
 
- 	$this = $(this);
-
- 	for (let i = 0; l = $this.length; i < l; i++) {
- 		
- 		sum += $this[i]
- 		
- 		console.log(sum);
- 	}	
+ 		sum+= value; 
 
  });
+ console.log(sum);
 });
