@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	
- $('image-box')each(function(){
+ $('image-box').each(function(){
 
  	$this = $(this);
 
