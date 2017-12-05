@@ -8,11 +8,9 @@ jQuery(document).ready(function($){
 		});
 
 		$(this).find('.shareable-popup', this).each(function(index, value){
-			$(this)
-			.attr('id', `popup-${index}`);
+			$(this).attr('id', `popup-${index}`);
+			let n = $(this).next().attr('id');
 
-			
-			let $thisId = $('.shareable-popup.active').next().attr('id');
 
 			// let $id = $this.next('.shareable-popup').attr('id');
 
@@ -25,7 +23,7 @@ jQuery(document).ready(function($){
 				// })
 
 				//debug
-				console.log('boo ' + $thisId);
+				console.log('boo ' + n);
 			});
 
 		});
