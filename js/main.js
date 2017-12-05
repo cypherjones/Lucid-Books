@@ -24,11 +24,10 @@ jQuery(document).ready(function($){
 		$('.shareable-popup').fadeOut(function(){
 			
 			$(this).removeClass('in active');
-
-			_next.fadeIn(function(){
+		})
+		_next.fadeIn(function(){
 				$(this).addClass('in active');
 			})
-		})
 		// debug
 		console.log('boo');
 	});
