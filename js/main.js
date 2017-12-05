@@ -7,5 +7,5 @@ jQuery(document).ready(function($){
  	n++;
 
  });
- console.log(sum + n);
+ console.log(n);
 });
