@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 		$('.next-pop').on('click', function(){
 			let $n = $(this).closest('.shareable-popup').attr('id');
 			
-			let $ne = $(this).next('div').html();
+			let $ne = $(this).offsetParent('div').html();
 
 			// let $m = _n.attr('id');
 
