@@ -20,9 +20,9 @@ jQuery(document).ready(function($){
 				// set the next var
 				// let n = $this.next();
 				//remove classes
-				n.fadeIn(function(){
-					$(this).removeClass('in active');
-				})
+				// n.fadeIn(function(){
+				// 	$(this).removeClass('in active');
+				// })
 
 				//debug
 				console.log('boo' + $thisId);
