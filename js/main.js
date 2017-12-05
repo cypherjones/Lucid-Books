@@ -10,13 +10,15 @@ jQuery(document).ready(function($){
 		$(this).find('.shareable-popup', this).each(function(index, value){
 			$(this).attr('id', `popup-${index}`);
 
-			let n = $('.shareable-popup');
+			$(this).each(function(){
+				let n = $('.shareable-popup');
 			let $next = n.eq(n.index(this) + 1);
 
 			let l = n.attr('id');
 			let m = $next.attr('id');
 
 			console.log(`${l} is before ${m}`)
+			})
 		});
 
 			
