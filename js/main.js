@@ -6,8 +6,11 @@ jQuery(document).ready(function($){
 
  	
 
- 	for (let i = 0; $this < 0; i++) {
- 		console.log(i);
+ 	for (let i = 0; l = $this.length; i < l; i++) {
+ 		
+ 		sum += $this[i]
+ 		
+ 		console.log(sum);
  	}	
 
  });
