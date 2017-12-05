@@ -205,8 +205,8 @@
                                       </div>
                                       <div class="shareable-popup modal fade">
                                         <div class="modal-dialog">
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                           <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <div class="shareable-box">
                                               <img src="https://placehold.it/400x400" alt="full shareable image">
                                             </div>
