@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
 
 		$('.next-pop').on('click', function(){
 			let $n = $(this).closest('.shareable-popup').attr('id');
-			let _n = $(this).next('.shareable-popup');
+			let _n = $(this).closest('.shareable-popup').nextAll('.modal');
 
 			let $m = _n.closest('.shareable-popup').next('.shareable-popup').attr('id');
 
