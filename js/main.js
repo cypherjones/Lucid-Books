@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
 
 			let $m = $n.closest('.shareable-popup').attr('id');
 
-			console.log($n $m);
+			console.log($n + $m);
 		})
 
 
