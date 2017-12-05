@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 
 			$this = $('.shareable-popup');
 
-			$this.next().attr('id');
+			$id = $this.next().attr('id');
 
 			$(this).find('.next-pop').on('click', function(){
 				// set the next var
@@ -25,7 +25,7 @@ jQuery(document).ready(function($){
 				})
 
 				//debug
-				console.log('boo' + $this);
+				console.log('boo' + $id);
 			});
 
 		});
