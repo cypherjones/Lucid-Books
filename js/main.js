@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
 
 		$(this).find('.shareable-img', this).each(function(index, value){
 			console.log(`${index}`);
+			$(this).attr('id', `popup-${index}`);
 		})
-
 	});
 });
