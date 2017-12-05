@@ -9,20 +9,12 @@ jQuery(document).ready(function($){
 
 		$(this).find('.shareable-popup', this).each(function(index, value){
 			$(this).attr('id', `popup-${index}`);
-
-			$(this).each(function(){
-
-			let n = $(this);
-			let $next = n.closest('.shareable-popup').nextAll('.modal').text('foo');
-
-			let l = n.attr('id');
-			let m = $next.attr('id');
-
-			console.log(`${l} is before ${m}`)
-			})
 		});
 
-			
+		$('.next-pop').on('click', function(){
+			let $n = $(this).closest('.shareable-popup').attr('id');
+			console.log($n);
+		})
 
 
 
