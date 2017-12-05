@@ -10,9 +10,6 @@ jQuery(document).ready(function($){
 		$(this).find('.shareable-popup', this).each(function(index, value){
 			$(this).attr('id', `popup-${index}`);
 
-			let _n = $
-		});
-
 			let n = $('.shareable-popup');
 			let $next = n.next('fade');
 
@@ -20,6 +17,9 @@ jQuery(document).ready(function($){
 			let m = $next.attr('id');
 
 			console.log(`${l} is before ${m}`)
+		});
+
+			
 
 
 
