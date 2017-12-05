@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 
-	let sum = 0;
+	let n = 0;
 	
  $('#popup-container').each(function(n){
 
