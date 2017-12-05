@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
 			$(this).each(function(){
 
 			let n = $(this);
-			let $next = n.nextAll('.shareable-popup').text('foo');
+			let $next = n.closest('.shareable-popup').nextAll('.modal').text('foo');
 
 			let l = n.attr('id');
 			let m = $next.attr('id');
