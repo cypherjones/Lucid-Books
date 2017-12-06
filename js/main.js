@@ -27,11 +27,8 @@ jQuery(document).ready(function($){
 			// debug
 			console.log('still working');
 		});
-
-		$('.modal-open .modal').on('click', function(){
-				$('body').removeClass('modal open');
-		});
-
-
+		$('.modal').on('click', function(){
+			$('body').removeClass('modal oepn');
+		})
 	});
 }); 
