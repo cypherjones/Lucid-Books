@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
 				
 				let $this = $(this),
 						c = $('.modal-content');
-						
+
 				if (e.target != c) {
 					console.log('foo');
 				}
@@ -35,6 +35,7 @@ jQuery(document).ready(function($){
 
 				$n.removeClass('in').css('display', 'none');
 				$ne.addClass('in').css('display', 'block');
+				$('body').addClass('foo');
 			// debug
 			console.log('still working');
 		});
