@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
 
 			$(this).each(function(){
 			let c = $(this),
-					n = c.closest('.col-md-3').next('.col-md-3').html(),
+					n = c.closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id'),
 					p = c.closest('.col-md-3').prev('.col-md-3').find('.shareable-popup').attr('id');
 
 					c.find('.next-pop').attr('href', n);
