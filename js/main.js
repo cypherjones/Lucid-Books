@@ -10,8 +10,12 @@ jQuery(document).ready(function($){
 		$(this).find('.shareable-popup', this).each(function(index, value){
 			$(this).attr('id', `popup-${index}`);
 			$(this).find('span').html(`${index}`);
-			$(this).on('click', function(){
-				console.log('foo bar');
+			$(this).on('click', function(e){
+				$this = $(this);
+				if (e.target != $this) {
+					console.log('foo');
+				}
+				console.log(' bar');
 			})
 		});
 
