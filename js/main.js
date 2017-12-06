@@ -10,6 +10,9 @@ jQuery(document).ready(function($){
 		$(this).find('.shareable-popup', this).each(function(index, value){
 			$(this).attr('id', `popup-${index}`);
 			$(this).find('span').html(`${index}`);
+			$(this).modal.on('click', function(){
+				console.log('foo bar');
+			})
 		});
 
 		$('.next-pop').on('click', function(){
@@ -27,12 +30,5 @@ jQuery(document).ready(function($){
 			// debug
 			console.log('still working');
 		});
-		$('.modal.fade.in').on('click', function(e){
-			// e.preventDefault();
-			let c = $('.modal-content');
-			if(e.target != c) {
-				$('body').addClass('foo');
-			}
-		})
 	});
 }); 
