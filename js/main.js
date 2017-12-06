@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 			// debug by showing the current index num
 			$(this).find('.cap').html(`${index}`);
 
-			makeTabs('oo');
+			makeTabs(index);
 		});
 
 		function makeTabs(c) {
