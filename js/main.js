@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
 		});
 		$('.modal.fade.in').on('click', function(e){
 			e.preventDefault();
-			let c = $('modal-content');
+			let c = $('.modal-content');
 			if(e.target != c) {
 				$('body').addClass('foo');
 			}
