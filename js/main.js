@@ -21,7 +21,7 @@ jQuery(document).ready(function($){
 			// .next('.col-md-3')
 			// .find('.shareable-popup').attr('id');
 
-				$n.removeClass('in');
+				$n.removeClass('in').css('display', 'none');
 				$ne.addClass('in').css('display', 'block');
 
 			
