@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
 		$(this).find('.shareable-popup', this).each(function(index, value){
 			$(this).attr('id', `popup-${index}`);
 			$(this).find('span').html(`${index}`);
-			$(this).modal.on('click', function(){
+			$(this).on('click', function(){
 				console.log('foo bar');
 			})
 		});
