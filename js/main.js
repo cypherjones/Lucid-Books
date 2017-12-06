@@ -29,8 +29,10 @@ jQuery(document).ready(function($){
 		});
 		$('.modal-backdrop.fade.in').on('click', function(e){
 			e.preventDefault();
-			$('body').addClass('foo');
-			console.log('remove the modal');
+			let c = $('modal-content');
+			if(e.target != c) {
+				$('body').addClass('foo');
+			}
 		})
 	});
 }); 
