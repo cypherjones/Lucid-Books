@@ -209,6 +209,7 @@
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <div class="shareable-box">
                                               <img src="https://placehold.it/400x400" alt="full shareable image">
+                                              <span></span>
                                             </div>
                                           </div>
                                           <div class="btn previous-pop">previous</div>
