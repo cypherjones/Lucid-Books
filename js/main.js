@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
 			// debug
 			console.log('still working');
 		});
-		$('.modal-backdrop.fade.in').on('click', function(e){
+		$('.modal.fade.in').on('click', function(e){
 			e.preventDefault();
 			let c = $('modal-content');
 			if(e.target != c) {
