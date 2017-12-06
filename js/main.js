@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
 			// debug
 			console.log('still working');
 		});
-		$('.modal.fade.in').on('click', function(){
+		$('.modal-backdrop.fade.in').on('click', function(){
 			$('body').addClass('foo');
 			console.log('remove the modal');
 		})
