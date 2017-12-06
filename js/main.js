@@ -10,11 +10,11 @@ jQuery(document).ready(function($){
 
 		$(this).find('.shareable-popup', this).each(function(index, value){
 			// add id loop num to the element
-			$(this).attr('id', `popup-${index}`);
+			let $index = $(this).attr('id', `popup-${index}`);
 			// debug by showing the current index num
 			$(this).find('.cap').html(`${index}`);
 
-			makeTabs(index);
+			makeTabs($index);
 
 		});
 
