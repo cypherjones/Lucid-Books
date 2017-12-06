@@ -14,17 +14,13 @@ jQuery(document).ready(function($){
 			// debug by showing the current index num
 			$(this).find('.cap').html(`${index}`);
 
-			$(this).each(function(){
-			let c = $(this),
-					n = c.closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id'),
-					p = c.closest('.col-md-3').prev('.col-md-3').find('.shareable-popup').attr('id');
-
-					c.find('.next-pop').attr('href', n);
-					// c.find('.prev-pop').attr('href', `#${p}`);
-
-					console.log(n);
-			})
+			makeTabs('oo');
 		});
+
+		function makeTabs(c) {
+			console.log(c);
+
+		};
 
 		// $('.next-pop').on('click', function(){
 		// 	let $n = $(this).closest('.shareable-popup'),
