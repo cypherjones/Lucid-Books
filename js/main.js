@@ -14,14 +14,16 @@ jQuery(document).ready(function($){
 			// debug by showing the current index num
 			$(this).find('.cap').html(`${index}`);
 
+			$(this).each(function(){
 			let c = $(this),
-					n = c.closest('.col-md-3', this).next('.col-md-3').html(),
+					n = c.closest('.col-md-3').next('.col-md-3').html(),
 					p = c.closest('.col-md-3').prev('.col-md-3').find('.shareable-popup').attr('id');
 
 					c.find('.next-pop').attr('href', n);
 					// c.find('.prev-pop').attr('href', `#${p}`);
 
 					console.log(n);
+			})
 		});
 
 		// $('.next-pop').on('click', function(){
