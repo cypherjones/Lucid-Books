@@ -14,14 +14,13 @@ jQuery(document).ready(function($){
 			// debug by showing the current index num
 			$(this).find('.cap').html(`${index}`);
 
-			$(this).each(function(){
-				makeTabs(index);
-			})
+			makeTabs(index);
+
 		});
 
 		function makeTabs(c) {
-			let $c = $('.next-pop').closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id');
-					// n = nx.closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id');
+			
+			$c = c.next('.col-md-3').html();
 
 			// debug
 			console.log(c + ' ' + $c);
