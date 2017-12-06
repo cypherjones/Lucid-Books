@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
 		});
 
 		$('.next-pop').on('click', function(){
-			let $n = $(this),
+			let $n = $(this).closest('.shareable-popup'),
 			    $ne = $n.closest('.col-md-3').next('.col-md-3').find('.shareable-popup');
 			// let $n = $(this).closest('.shareable-popup').attr('id');
 			
