@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
 
 		function makeTabs(c) {
 			let nx = $('.next-pop');
-					n = nx.closest('.shareable-popup').next('.col-md-3').find('.shareable-popup').attr('id');
+					n = $(this).closest('.shareable-popup').next('.col-md-3').find('.shareable-popup').attr('id');
 
 			// debug
 			console.log(c + ' ' + n);
