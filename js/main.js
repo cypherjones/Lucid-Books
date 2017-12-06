@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
 
 		$(this).find('.shareable-popup', this).each(function(index, value){
 			$(this).attr('id', `popup-${index}`);
-			$(this).find('span').html(`${index}`);
+			$(this).find('.cap').html(`${index}`);
 			$(this).on('click', function(e){
 				
 				let $this = $(this),
@@ -35,7 +35,7 @@ jQuery(document).ready(function($){
 
 				$n.removeClass('in').css('display', 'none');
 				$ne.addClass('in').css('display', 'block');
-				$('body').addClass('foo');
+				$('body').toggleClass('foo')
 			// debug
 			console.log('still working');
 		});

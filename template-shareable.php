@@ -209,7 +209,7 @@
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <div class="shareable-box">
                                               <img src="https://placehold.it/400x400" alt="full shareable image">
-                                              <span></span>
+                                              <span class="cap"></span>
                                             </div>
                                             <div class="btn previous-pop">previous</div>
                                             <div class="btn next-pop">next</div>
@@ -218,7 +218,6 @@
                                       </div>
                                     </div>
                                     
-
                                 <?php endwhile; endif; ?>
 
                                 </div>
