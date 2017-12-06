@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
 					p = c.closest('.col-md-3').prev('.col-md-3').find('.shareable-popup').attr('id');
 
 					c.find('.next-pop').attr('href', n);
-					c.find('.prev-pop').attr('href', p);
+					c.find('.prev-pop').attr('href', `#${p}`);
 
 		});
 
