@@ -12,16 +12,21 @@ jQuery(document).ready(function($){
 		});
 
 		$('.next-pop').on('click', function(){
-			let $n = $(this).closest('.shareable-popup').attr('id');
+			let $n = $(this),
+			    $ne = $n.closest('.col-md-3').next('.col-md-3').find('.shareable-popup');
+			// let $n = $(this).closest('.shareable-popup').attr('id');
 			
-			let $ne = $(this)
-			.closest('.col-md-3')
-			.next('.col-md-3')
-			.find('.shareable-popup').attr('id');
+			// let $ne = $(this)
+			// .closest('.col-md-3')
+			// .next('.col-md-3')
+			// .find('.shareable-popup').attr('id');
+
+				$n.removeClass('in');
+				$ne.addClass('in');
 
 			
 
-			console.log($n + ' ' + $ne);
+			console.log('still working');
 		})
 
 
