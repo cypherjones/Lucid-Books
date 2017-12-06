@@ -28,7 +28,7 @@ jQuery(document).ready(function($){
 			console.log('still working');
 		});
 		$('.modal.fade.in').on('click', function(e){
-			e.preventDefault();
+			// e.preventDefault();
 			let c = $('.modal-content');
 			if(e.target != c) {
 				$('body').addClass('foo');
