@@ -3,7 +3,8 @@ jQuery(document).ready(function($){
 	$('.share-container').each(function(){
 
 		$(this).find('.shareable-img', this).each(function(index, value){
-			console.log(`${index}`);
+			// debug
+			// console.log(`${index}`);
 			$(this).attr('data-target', `#popup-${index}`);
 		});
 
@@ -11,8 +12,11 @@ jQuery(document).ready(function($){
 			$(this).attr('id', `popup-${index}`);
 			$(this).find('span').html(`${index}`);
 			$(this).on('click', function(e){
-				$this = $(this);
-				if (e.target != $this) {
+				
+				let $this = $(this),
+						c = $('.modal-content');
+						
+				if (e.target != c) {
 					console.log('foo');
 				}
 				console.log(' bar');
