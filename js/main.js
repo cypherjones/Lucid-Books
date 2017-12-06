@@ -34,9 +34,9 @@ jQuery(document).ready(function($){
 			$m = $('.modal.open');
 		};
 
-		window.on('click', function(e){
+		$('.modal-open .modal').on('click', function(e){
 			if (e.target == $m) {
-				$(this).removeClass('modal open')
+				$('body').removeClass('modal open')
 			}
 		});
 
