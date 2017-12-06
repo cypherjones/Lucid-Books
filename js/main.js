@@ -27,8 +27,8 @@ jQuery(document).ready(function($){
 			// debug
 			console.log('still working');
 		});
-		$('.modal-backdrop').on('click', function(){
-			$('body').removeClass('modal oepn');
+		$('.modal').on('click', function(){
+			$('body').addClass('foo');
 			console.log('remove the modal');
 		})
 	});
