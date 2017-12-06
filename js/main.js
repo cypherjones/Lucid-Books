@@ -18,8 +18,11 @@ jQuery(document).ready(function($){
 		});
 
 		function makeTabs(c) {
-			console.log(c);
+			let nx = $('.next-pop');
+					n = nx.closest('.shareable-popup').next('.col-md-3').find('.shareable-popup').attr('id');
 
+			// debug
+			console.log(c + ' ' + n);
 		};
 
 		// $('.next-pop').on('click', function(){
