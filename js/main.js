@@ -28,16 +28,8 @@ jQuery(document).ready(function($){
 			console.log('still working');
 		});
 
-		let $m = '';
-
-		if ($('.modal.open') > 0 ) {
-			$m = $('.modal.open');
-		};
-
-		$('.modal-open .modal').on('click', function(e){
-			if (e.target == $m) {
-				$('body').removeClass('modal open')
-			}
+		$('.modal-open .modal').on('click', function(){
+				$('body').removeClass('modal open');
 		});
 
 
