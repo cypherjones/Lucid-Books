@@ -20,8 +20,8 @@ jQuery(document).ready(function($){
 
 					c.find('.next-pop').attr('href', n);
 					// c.find('.prev-pop').attr('href', `#${p}`);
-
 		});
+		console.log(n);
 
 		// $('.next-pop').on('click', function(){
 		// 	let $n = $(this).closest('.shareable-popup'),
