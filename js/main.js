@@ -9,7 +9,7 @@ jQuery(document).ready(function($){
 
 		$(this).find('.shareable-popup', this).each(function(index, value){
 			$(this).attr('id', `popup-${index}`);
-			$(this).html(`<span>${index}</span>`);
+			$(this).find('span').html(`${index}`);
 		});
 
 		$('.next-pop').on('click', function(){
