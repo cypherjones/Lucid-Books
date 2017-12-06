@@ -35,7 +35,7 @@ jQuery(document).ready(function($){
 
 				$n.removeClass('in').css('display', 'none');
 				$ne.addClass('in').css('display', 'block');
-				$('body').toggleClass('foo')
+				$('body').removeClass('foo').addClass('foo');
 			// debug
 			console.log('still working');
 		});
