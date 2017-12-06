@@ -24,12 +24,21 @@ jQuery(document).ready(function($){
 
 				$n.removeClass('in').css('display', 'none');
 				$ne.addClass('in').css('display', 'block');
-
-			
-
+			// debug
 			console.log('still working');
-		})
+		});
 
+		let $m = '';
+
+		if ($('.modal.open') > 0 ) {
+			$m = $('.modal.open');
+		};
+
+		window.on('click', function(e){
+			if (e.target == $m) {
+				$(this).removeClass('modal open')
+			}
+		});
 
 
 	});
