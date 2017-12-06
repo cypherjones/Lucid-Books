@@ -19,9 +19,9 @@ jQuery(document).ready(function($){
 			.next('.col-md-3')
 			.find('.shareable-popup').attr('id');
 
-			// let $m = _n.attr('id');
+			
 
-			console.log($n + $ne);
+			console.log($n + ' ' + $ne);
 		})
 
 
