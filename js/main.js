@@ -29,6 +29,7 @@ jQuery(document).ready(function($){
 		});
 		$('.modal').on('click', function(){
 			$('body').removeClass('modal oepn');
+			console.log('remove the modal');
 		})
 	});
 }); 
