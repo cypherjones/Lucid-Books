@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
 			let $ne = $(this)
 			.closest('.col-md-3')
 			.next('.col-md-3')
-			.closest('.shareable-popup').attr('id');
+			.find('.shareable-popup').attr('id');
 
 			// let $m = _n.attr('id');
 
