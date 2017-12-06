@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
 			// .find('.shareable-popup').attr('id');
 
 				$n.removeClass('in');
-				$ne.addClass('in');
+				$ne.addClass('in').css('display', 'block');
 
 			
 
