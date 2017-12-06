@@ -15,9 +15,12 @@ jQuery(document).ready(function($){
 			$(this).find('.cap').html(`${index}`);
 
 			let c = $(this),
-					n = c.closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id');
+					n = c.closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id'),
+					p = c.closest('.col-md-3').prev('.col-md-3').find('.shareable-popup').attr('id');
 
-			$(this).find('.next-pop').attr('href', 'foo');
+					c.find('.next-pop').attr('href', n);
+					c.find('.prev-pop').attr('href', p);
+
 		});
 
 		// $('.next-pop').on('click', function(){
@@ -34,7 +37,7 @@ jQuery(document).ready(function($){
 				// $ne.addClass('in').css('display', 'block');
 				// $('body').removeClass('foo').addClass('foo');
 			// debug
-			console.log('still working');
-		});
+		// 	console.log('still working');
+		// });
 	});
 }); 
