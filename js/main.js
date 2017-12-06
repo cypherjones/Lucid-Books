@@ -11,16 +11,7 @@ jQuery(document).ready(function($){
 		$(this).find('.shareable-popup', this).each(function(index, value){
 			$(this).attr('id', `popup-${index}`);
 			$(this).find('.cap').html(`${index}`);
-			$(this).on('click', function(e){
-				
-				let $this = $(this),
-						c = $('.modal-content');
-
-				if (e.target != c) {
-					console.log('foo');
-				}
-				console.log(' bar');
-			})
+			$(this).find('.next-pop').attr('href', 'foo');
 		});
 
 		$('.next-pop').on('click', function(){
