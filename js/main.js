@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 			// debug by showing the current index num
 			$(this).find('.cap').html(`${index}`);
 
-			makeTabs($index);
+			makeTabs(index);
 
 		});
 
@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
 			$c = c.next('.col-md-3').html();
 
 			// debug
-			console.log($c);
+			console.log(c);
 		};
 
 		// $('.next-pop').on('click', function(){
