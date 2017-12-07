@@ -18,10 +18,7 @@ jQuery(document).ready(function($){
 					n = c + 1,
 					p = c - 1,
 					$n = `#popup-${n}`;
-
-					if ($n.length > 0) {
-						return $n;
-					}
+					return $n;
 
 			// $('.next-pop').on('click', function(){
 			// 	console.log(c)
