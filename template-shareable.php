@@ -214,7 +214,7 @@
                                           <div class="modal-content">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <div class="shareable-box">
-                                              <img src=<?php echo $shareImg['url'] ?>" alt="full shareable image">
+                                              <img src="<?php echo $shareImg['url'];?>" alt="full shareable image">
                                             </div>
                                              <div class="cap"></div>
                                             <div class="btn prev-pop" data-toggle="modal" data-dismiss="modal">previous</div>
