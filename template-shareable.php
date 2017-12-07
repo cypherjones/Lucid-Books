@@ -211,9 +211,8 @@
                                       </div>
                                       <div class="shareable-popup modal fade">
                                         <div class="modal-dialog">
-                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                           <div class="modal-content">
-                                           
+                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <div class="shareable-box">
                                               <div class="share-me">
                                                 <?php social_warfare(); ?>
