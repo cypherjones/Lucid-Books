@@ -25,7 +25,7 @@ jQuery(document).ready(function($){
 			// n = c + 1;
 			// p = c - 1;
 
-			$n = `#popup-${n}`;
+			// $n = `#popup-${n}`;
 
 					n = $i.closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id'),
  					p = $i.closest('.col-md-3').prev('.col-md-3').find('.shareable-popup').attr('id');
