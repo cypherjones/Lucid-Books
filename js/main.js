@@ -32,9 +32,9 @@ jQuery(document).ready(function($){
 
 				let $ne = $(this).closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id'),
 						$c = $(this).html();
-					
-					$c.modal({
-						backdrop: false,
+						
+					$ne.on('show.bs.modal', function(){
+							console.log($c);
 					})
 				
 			})
