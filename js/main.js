@@ -28,19 +28,9 @@ jQuery(document).ready(function($){
 			$i.find('.next-pop').attr('href', `#popup-${n}`);
  			$i.find('.prev-pop').attr('href', `#popup-${p}`);
 
-
-
-			$index.on('hide.bs.modal', function(e){
-					console.log('foo');
-			});
-
-			$('.next-pop').on('click', function(){
-
-			
-						
-					
-				
-			})
+			// $index.on('hide.bs.modal', function(e){
+			// 		console.log('foo');
+			// });
 
 		});
 		
