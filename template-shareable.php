@@ -214,6 +214,9 @@
                                           <div class="modal-content">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <div class="shareable-box">
+                                              <div class="share-me">
+                                                <?php social_warfare(); ?>
+                                              </div>
                                               <img src="<?php echo $shareImg['url'];?>" alt="full shareable image">
                                             </div>
                                              <div class="cap"></div>
@@ -223,7 +226,7 @@
                                         </div>
                                       </div>
                                     </div>
-                                    
+                                  
                                 <?php endwhile; endif; ?>
 
                                 </div>
