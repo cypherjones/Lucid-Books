@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
  					p = $i.closest('.col-md-3').prev('.col-md-3').find('.shareable-popup').attr('id');
 
  					$i.find('.next-pop').each(function(){
- 					let $n =$(this).closest.('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id');
+ 					let $n =$(this).closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id');
  					});
  					
  					$p 
