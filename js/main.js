@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
 			$c = c.next('.col-md-3').html();
 
 			// debug
-			console.log(c + ' ' + $c);
+			console.log($c);
 		};
 
 		// $('.next-pop').on('click', function(){
