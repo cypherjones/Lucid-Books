@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
  			$i.find('.prev-pop').attr('href', `#popup-${p}`);
 
  			$('.next-pop').on('click', function(){
- 				console.log(c);
+ 				console.log($i + c);
  			});
 			// $index.on('shown.bs.modal', function(e){
 
