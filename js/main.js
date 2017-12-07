@@ -1,5 +1,7 @@
 jQuery(document).ready(function($){
 
+	let $n = '';
+
 	$('.share-container').each(function(){
 
 		$(this).find('.shareable-img', this).each(function(index, value){
@@ -16,9 +18,9 @@ jQuery(document).ready(function($){
 
 			let c = index,
 					n = c + 1,
-					p = c - 1,
+					p = c - 1;
+					
 					$n = `#popup-${n}`;
-					return $n;
 
 			// $('.next-pop').on('click', function(){
 			// 	console.log(c)
