@@ -33,7 +33,7 @@ jQuery(document).ready(function($){
 				let $ne = $(this).closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id'),
 						$c = $(this);
 						
-					$c.on('show.bs.modal', function(){
+					$c.on('show.bs.modal', function(e){
 							console.log($c);
 					})
 				
