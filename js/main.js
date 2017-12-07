@@ -26,17 +26,17 @@ jQuery(document).ready(function($){
 
 			$n = `#popup-${n}`;
 
-			nId = $(this)
+			let $ne = $(this)
 			.closest('.col-md-3')
 			.next('.col-md-3')
-			.find('.shareable-popup')
-			.attr('id');
+			.find('.shareable-popup').attr('id');
 
 			// $('.next-pop').on('click', function(){
 			// 	console.log(c)
 			// })
+			console.log($ne);
 		});
-		console.log(nId);
+		
 
 
 		
