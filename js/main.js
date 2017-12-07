@@ -28,12 +28,11 @@ jQuery(document).ready(function($){
 			$i.find('.next-pop').attr('href', `#popup-${n}`);
  			$i.find('.prev-pop').attr('href', `#popup-${p}`);
 
+ 			$metaTitle = $i.find('.share-img-box img').attr('alt');
 
 			$index.on('shown.bs.modal', function(e){
-
-				$metaTitle = $i.find('.share-img-box img').attr('alt');
 					
-					$('meta[property="og:title"]').attr('content', $metaTitle);
+					$('meta[property=og\\:title]').attr('content', $metaTitle);
 
 					console.log($metaTitle);
 			});
