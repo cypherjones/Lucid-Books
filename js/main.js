@@ -22,19 +22,16 @@ jQuery(document).ready(function($){
 
 			c = index,
 			$i = $(this);
-			// n = c + 1;
-			// p = c - 1;
+			n = c + 1;
+			p = c - 1;
 
 			// $n = `#popup-${n}`;
 
-					n = $i.closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id'),
- 					p = $i.closest('.col-md-3').prev('.col-md-3').find('.shareable-popup').attr('id');
+			
 
-					let $n = $i.find('.next-pop').closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id');
  					
- 					$p = '';
  
- 					$i.find('.next-pop').attr('href', $n);
+ 					$i.find('.next-pop').attr('href', n);
  					$i.find('.prev-pop').attr('href', p);
 
 
@@ -45,8 +42,7 @@ jQuery(document).ready(function($){
 
 			$('.next-pop').on('click', function(){
 
-				let $ne = $(this).closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id'),
-						$c = $(this);
+			
 						
 					
 				
