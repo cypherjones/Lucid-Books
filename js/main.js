@@ -25,14 +25,8 @@ jQuery(document).ready(function($){
 			n = c + 1;
 			p = c - 1;
 
-			// $n = `#popup-${n}`;
-
-			
-
- 					
- 
- 					$i.find('.next-pop').attr('href', n);
- 					$i.find('.prev-pop').attr('href', p);
+			$i.find('.next-pop').attr('href', `#popup-${n}`);
+ 			$i.find('.prev-pop').attr('href', `#popup-${p}`);
 
 
 
