@@ -22,9 +22,15 @@ jQuery(document).ready(function($){
 			$(this).find('.next-pop').attr('href', `#popup-${n}`);
 			$(this).find('.prev-pop').attr('href', `#popup-${p}`);
 
-			$('.next-pop').on('click', function(){
+			$(this).each(function(){
+				$('.next-pop').on('click', function(){
 				console.log(c)
+				});
 			})
+
+			// $('.next-pop').on('click', function(){
+			// 	console.log(c)
+			// })
 
 
 		});
