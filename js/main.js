@@ -34,7 +34,7 @@ jQuery(document).ready(function($){
  					let $n =$(this).closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id');
  					});
  					
- 					$p 
+ 					$p = '';
  
  					$i.find('.next-pop').attr('href', $n);
  					$i.find('.prev-pop').attr('href', p);
