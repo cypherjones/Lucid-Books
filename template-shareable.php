@@ -196,19 +196,25 @@
                               <div id='share-pop' class="shareable image-box">
                                 <div class="row">
 
-                                <?php if (have_rows('shared_images')) : while (have_rows('shared_images')) : the_row();  ?>
+                                <?php 
+
+                                if (have_rows('shared_images')) : while (have_rows('shared_images')) : the_row();  
+
+                                  $shareImg = get_sub_field('image');
+
+                                ?>
 
                                     <div class="col-md-3 col-sm-3 col-xs-12">
                                       
                                       <div class="shareable-img" data-toggle="modal">
-                                        <img src="https://placehold.it/400x400" alt="shareable images">
+                                        <img src="<?php echo $shareImg['url'] ?>" alt="shareable images">
                                       </div>
                                       <div class="shareable-popup modal fade">
                                         <div class="modal-dialog">
                                           <div class="modal-content">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <div class="shareable-box">
-                                              <img src="https://placehold.it/400x400" alt="full shareable image">
+                                              <img src=<?php echo $shareImg['url'] ?>" alt="full shareable image">
                                             </div>
                                              <div class="cap"></div>
                                             <div class="btn prev-pop" data-toggle="modal" data-dismiss="modal">previous</div>
