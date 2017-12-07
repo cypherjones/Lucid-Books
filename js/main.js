@@ -3,7 +3,8 @@ jQuery(document).ready(function($){
 	let $n = ''.
 			c = '',
 			n = '',
-			p = '';
+			p = '',
+			nId = '';
 
 	$('.share-container').each(function(){
 
@@ -25,16 +26,13 @@ jQuery(document).ready(function($){
 
 			$n = `#popup-${n}`;
 
+			let nId = $(this).closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id');
+
 			// $('.next-pop').on('click', function(){
 			// 	console.log(c)
 			// })
-			$(this).find('.next-pop').each(function(){
-				$(this).on('click', function(){
-				console.log($n);
-				});
-			})
 		});
-
+		console.log(nId);
 
 
 		
