@@ -16,6 +16,8 @@ jQuery(document).ready(function($){
 
 			makeTabs(index);
 
+			$(this).find('.next-pop').attr('href', `#popup-${n}`)
+
 		});
 
 		function makeTabs(c) {
