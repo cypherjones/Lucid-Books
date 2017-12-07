@@ -30,7 +30,7 @@ jQuery(document).ready(function($){
 
  			$(this).each(function(){
 
- 				$(this)find('.next-pop').on('click', function(){
+ 				$(this).find('.next-pop').on('click', function(){
 
  				$metaTitle = $i.find('.share-img-box img').attr('alt');
 					
