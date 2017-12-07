@@ -15,8 +15,9 @@ jQuery(document).ready(function($){
 			$(this).find('.cap').html(`${index}`);
 
 			let c = index,
-					n = c + 1;
+					n = c + 1,
 					p = c - 1;
+
 
 			$(this).find('.next-pop').attr('href', `#popup-${n}`);
 			$(this).find('.prev-pop').attr('href', `#popup-${p}`);
