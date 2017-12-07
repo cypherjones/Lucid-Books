@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
 
 		function makeTabs(c) {
 			
-			$c = c.next('.col-md-3').html();
+			// $c = c.next('.col-md-3').html();
 
 			// debug
 			console.log(c);
