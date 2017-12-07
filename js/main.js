@@ -25,6 +25,7 @@ jQuery(document).ready(function($){
 
 			// debug
 			console.log(`${c} is now, then ${n} and ${p}`);
+			return n, p;
 		};
 
 		// $('.next-pop').on('click', function(){
