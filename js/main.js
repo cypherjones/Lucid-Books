@@ -14,21 +14,13 @@ jQuery(document).ready(function($){
 			// debug by showing the current index num
 			$(this).find('.cap').html(`${index}`);
 
-			makeTabs(index);
+			let c = index,
+					n = c + 1;
+					p = c - 1;
 
 			$(this).find('.next-pop').attr('href', `#popup-${n}`)
 
 		});
-
-		function makeTabs(c) {
-			
-			let n = c + 1;
-			    p = c - 1;
-
-			// debug
-			console.log(`${c} is now, then ${n} and ${p}`);
-			return n, p;
-		};
 
 		// $('.next-pop').on('click', function(){
 		// 	let $n = $(this).closest('.shareable-popup'),
