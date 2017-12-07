@@ -26,7 +26,7 @@ jQuery(document).ready(function($){
 
 			$n = `#popup-${n}`;
 
-			$index.on('show.bs.modal', function(e){
+			$index.on('hide.bs.modal', function(e){
 					console.log('foo');
 			});
 
