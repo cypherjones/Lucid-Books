@@ -41,7 +41,8 @@ jQuery(document).ready(function($){
 
 		});
 		$('.next-pop').on('click', function(){
- 				console.log(c);
+ 				$cid = $(this).closest('.shareable-popup').attr('id')
+ 				console.log($cid);
  			});
 
 
