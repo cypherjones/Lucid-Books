@@ -20,10 +20,11 @@ jQuery(document).ready(function($){
 
 		function makeTabs(c) {
 			
-			// $c = c.next('.col-md-3').html();
+			let n = c + 1;
+			    p = c - 1;
 
 			// debug
-			console.log(c);
+			console.log(c + n + p);
 		};
 
 		// $('.next-pop').on('click', function(){
