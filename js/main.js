@@ -1,6 +1,9 @@
 jQuery(document).ready(function($){
 
-	let $n = '';
+	let $n = ''.
+			c = '',
+			n = '',
+			p = '';
 
 	$('.share-container').each(function(){
 
@@ -16,11 +19,11 @@ jQuery(document).ready(function($){
 			// debug by showing the current index num
 			$(this).find('.cap').html(`${index}`);
 
-			let c = index,
-					n = c + 1,
-					p = c - 1;
-					
-					$n = `#popup-${n}`;
+			c = index;
+			n = c + 1;
+			p = c - 1;
+
+			$n = `#popup-${n}`;
 
 			// $('.next-pop').on('click', function(){
 			// 	console.log(c)
