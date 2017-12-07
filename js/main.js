@@ -31,10 +31,6 @@ jQuery(document).ready(function($){
  			$('.next-pop').on('click', function(){
  				console.log(c);
  			});
-
- 			});
-
-
 			// $index.on('shown.bs.modal', function(e){
 
 			// 		$metaTitle = $i.find('.share-img-box img').attr('alt');
