@@ -32,7 +32,7 @@ jQuery(document).ready(function($){
 
 			$index.on('shown.bs.modal', function(e){
 					
-					// $('meta[property=og:title]').attr('content', 'new value');
+					$('meta[property=og:title]').attr('content', $metaTitle);
 
 					console.log($metaTitle);
 			});
