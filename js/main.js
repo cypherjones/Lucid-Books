@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
 			$(this).find('.prev-pop').attr('href', `#popup-${p}`);
 
 			$('.next-pop').on('click', function(){
-				// $(this).closest('.modal').removeClass('in');
+				console.log(c)
 			})
 
 

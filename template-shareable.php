@@ -211,8 +211,8 @@
                                               <img src="https://placehold.it/400x400" alt="full shareable image">
                                             </div>
                                              <div class="cap"></div>
-                                            <a class="btn prev-pop" data-toggle="modal" data-dimiss="modal">previous</a>
-                                            <a class="btn next-pop" data-toggle="modal" data-dimiss="modal">next</a>
+                                            <div class="btn prev-pop">previous</div>
+                                            <div class="btn next-pop">next</div>
                                           </div>
                                         </div>
                                       </div>
