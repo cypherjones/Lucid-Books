@@ -4,7 +4,8 @@ jQuery(document).ready(function($){
 			c = '',
 			n = '',
 			p = '',
-			nId = '';
+			nId = '',
+			$i = '';
 
 	$('.share-container').each(function(){
 
@@ -28,9 +29,7 @@ jQuery(document).ready(function($){
 			$i.find('.next-pop').attr('href', `#popup-${n}`);
  			$i.find('.prev-pop').attr('href', `#popup-${p}`);
 
- 			$('.next-pop').on('click', function(){
- 				console.log($i + c);
- 			});
+ 			
 			// $index.on('shown.bs.modal', function(e){
 
 			// 		$metaTitle = $i.find('.share-img-box img').attr('alt');
@@ -41,7 +40,9 @@ jQuery(document).ready(function($){
 			// });
 
 		});
-		
+		$('.next-pop').on('click', function(){
+ 				console.log(c);
+ 			});
 
 
 		
