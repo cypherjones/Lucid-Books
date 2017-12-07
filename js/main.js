@@ -28,15 +28,9 @@ jQuery(document).ready(function($){
 			$i.find('.next-pop').attr('href', `#popup-${n}`);
  			$i.find('.prev-pop').attr('href', `#popup-${p}`);
 
- 			$(this).each(function(){
-
- 				$(this).find('.next-pop').on('click', function(){
-
- 				$metaTitle = $i.find('.share-img-box img').attr('alt');
-					
-				$('meta[property="og:title"]').attr('content', $metaTitle);
-
- 			})
+ 			$('.next-pop').on('click', function(){
+ 				console.log(c);
+ 			});
 
  			});
 
