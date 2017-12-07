@@ -16,40 +16,18 @@ jQuery(document).ready(function($){
 
 			let c = index,
 					n = c + 1,
-					p = c - 1;
-
-
-			$(this).find('.next-pop').attr('href', `#popup-${n}`);
-			$(this).find('.prev-pop').attr('href', `#popup-${p}`);
-
-			$(this).each(function(){
-				$('.next-pop').on('click', function(){
-				console.log(c)
-				});
-			})
+					p = c - 1,
+					$n = `#popup-${n}`;
 
 			// $('.next-pop').on('click', function(){
 			// 	console.log(c)
 			// })
-
-
 		});
 
-		// $('.next-pop').on('click', function(){
-		// 	let $n = $(this).closest('.shareable-popup'),
-		// 	    $ne = $n.closest('.col-md-3').next('.col-md-3').find('.shareable-popup');
-			// let $n = $(this).closest('.shareable-popup').attr('id');
-			
-			// let $ne = $(this)
-			// .closest('.col-md-3')
-			// .next('.col-md-3')
-			// .find('.shareable-popup').attr('id');
 
-				// $n.removeClass('in').css('display', 'none');
-				// $ne.addClass('in').css('display', 'block');
-				// $('body').removeClass('foo').addClass('foo');
-			// debug
-		// 	console.log('still working');
-		// });
+
+		$('.next-pop').on('click', function(){
+			console.log($n);
+		});
 	});
 }); 
