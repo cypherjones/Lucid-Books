@@ -26,7 +26,7 @@ jQuery(document).ready(function($){
 
 			$n = `#popup-${n}`;
 
-			let nId = $(this).closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id');
+			nId = $(this).closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id');
 
 			// $('.next-pop').on('click', function(){
 			// 	console.log(c)
