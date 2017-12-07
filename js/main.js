@@ -18,7 +18,12 @@ jQuery(document).ready(function($){
 					n = c + 1;
 					p = c - 1;
 
-			$(this).find('.next-pop').attr('href', `#popup-${n}`)
+			$(this).find('.next-pop').attr('href', `#popup-${n}`);
+
+			$('.next-pop').on('click', function(){
+				$('body').remove('<div class="modal-backdrop fade in"></div>');
+			})
+
 
 		});
 
