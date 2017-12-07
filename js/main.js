@@ -28,12 +28,13 @@ jQuery(document).ready(function($){
 			// $('.next-pop').on('click', function(){
 			// 	console.log(c)
 			// })
-		});
-
-
-
-		$('.next-pop').on('click', function(){
+			$('.next-pop').on('click', function(){
 			console.log($n);
+			});
 		});
+
+
+
+		
 	});
 }); 
