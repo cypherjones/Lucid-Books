@@ -20,11 +20,20 @@ jQuery(document).ready(function($){
 			// debug by showing the current index num
 			$(this).find('.cap').html(`${index}`);
 
-			c = index;
-			n = c + 1;
-			p = c - 1;
+			c = index,
+			$i = $(this);
+			// n = c + 1;
+			// p = c - 1;
 
 			$n = `#popup-${n}`;
+
+					n = $i.closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id'),
+ 					p = $i.closest('.col-md-3').prev('.col-md-3').find('.shareable-popup').attr('id');
+ 
+ 					$i.find('.next-pop').attr('href', n);
+ 					$i.find('.prev-pop').attr('href', p);
+
+
 
 			$index.on('hide.bs.modal', function(e){
 					console.log('foo');
