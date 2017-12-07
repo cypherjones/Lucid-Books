@@ -219,7 +219,6 @@
                                               </div>
                                               <img src="<?php echo $shareImg['url'];?>" alt="full shareable image">
                                             </div>
-                                             <div class="cap"></div>
                                             <div class="btn prev-pop" data-toggle="modal" data-dismiss="modal">previous</div>
                                             <div class="btn next-pop" data-toggle="modal" data-dismiss="modal">next</div>
                                           </div>
