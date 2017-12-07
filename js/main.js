@@ -29,11 +29,11 @@ jQuery(document).ready(function($){
 			
 
 			$('.next-pop').on('click', function(){
-				let $ne = $(this)
-				.closest('.col-md-3')
-				.next('.col-md-3')
-				.find('.shareable-popup').attr('id');
-				console.log($ne);
+
+				let $ne = $(this).closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id'),
+						$c = $(this).html();
+				
+				console.log($ne + $c);
 			})
 
 		});
