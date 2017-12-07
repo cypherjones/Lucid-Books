@@ -28,9 +28,11 @@ jQuery(document).ready(function($){
 			// $('.next-pop').on('click', function(){
 			// 	console.log(c)
 			// })
-			$('.next-pop').on('click', function(){
-			console.log($n);
-			});
+			$(this).each(this, function(){
+				$('.next-pop').on('click', function(){
+				console.log($n);
+				});
+			})
 		});
 
 
