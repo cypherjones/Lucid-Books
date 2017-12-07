@@ -19,9 +19,10 @@ jQuery(document).ready(function($){
 					p = c - 1;
 
 			$(this).find('.next-pop').attr('href', `#popup-${n}`);
+			$(this).find('.prev-pop').attr('href', `#popup-${p}`);
 
 			$('.next-pop').on('click', function(){
-				$(this).closest('.modal').removeClass('in');
+				// $(this).closest('.modal').removeClass('in');
 			})
 
 
