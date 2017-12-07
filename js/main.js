@@ -29,8 +29,14 @@ jQuery(document).ready(function($){
 
 					n = $i.closest('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id'),
  					p = $i.closest('.col-md-3').prev('.col-md-3').find('.shareable-popup').attr('id');
+
+ 					$i.find('.next-pop').each(function(){
+ 					let $n =$(this).closest.('.col-md-3').next('.col-md-3').find('.shareable-popup').attr('id');
+ 					});
+ 					
+ 					$p 
  
- 					$i.find('.next-pop').attr('href', n);
+ 					$i.find('.next-pop').attr('href', $n);
  					$i.find('.prev-pop').attr('href', p);
 
 
