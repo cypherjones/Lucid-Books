@@ -212,7 +212,7 @@
                                             </div>
                                              <div class="cap"></div>
                                             <a class="btn prev-pop" data-toggle="modal" data-dimiss="modal">previous</a>
-                                            <a class="btn next-pop" data-toggle="modal" data-dimiss="modal">next</a>
+                                            <a class="btn next-pop"  data-dimiss="modal">next</a>
                                           </div>
                                         </div>
                                       </div>
