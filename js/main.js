@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
 			$n = `#popup-${n}`;
 
 			$index.on('show.bs.modal', function(e){
-					console.log($c);
+					console.log('foo');
 			});
 
 			$('.next-pop').on('click', function(){
