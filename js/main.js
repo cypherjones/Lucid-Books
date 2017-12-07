@@ -28,9 +28,14 @@ jQuery(document).ready(function($){
 			$i.find('.next-pop').attr('href', `#popup-${n}`);
  			$i.find('.prev-pop').attr('href', `#popup-${p}`);
 
-			// $index.on('hide.bs.modal', function(e){
-			// 		console.log('foo');
-			// });
+ 			$metaTitle = $i.find('.share-img-box img').attr('alt').text();
+
+			$index.on('shown.bs.modal', function(e){
+					
+					// $('meta[property=og:title]').attr('content', 'new value');
+
+					console.log($metaTitle);
+			});
 
 		});
 		

@@ -218,7 +218,7 @@
                                                 <?php social_warfare(); ?>
                                               </div>
                                               <div class="share-img-box">
-                                                <img src="<?php echo $shareImg['url'];?>" alt="full shareable image">
+                                                <img src="<?php echo $shareImg['url'];?>" alt="<?php echo $shareImg['title'] ?>">
                                               </div>
                                             </div>
                                             <div class="btn prev-pop" data-toggle="modal" data-dismiss="modal">previous</div>
