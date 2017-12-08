@@ -33,14 +33,16 @@ jQuery(document).ready(function($){
 
  				let l = window.location.href,
  						t = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt'),
+ 						ti = $(this).closest('.shareable-popup').find('.share-img-box img').attr('src'),
  						$href = 'http://www.facebook.com/sharer.php?u=' + l + '&amp;t=' + t;
 
  						$('meta[property="og:title"]').attr('content', t);
 						$('meta[name="twitter:title"]').attr('content', t);
+						$('meta[property="og:image"]').attr('content', ti);
 
  				// $href = l;
 
- 				$(this).find('.facebook').attr('href', 'http://www.facebook.com/sharer.php?content_url=https://www.lucidbooks.net/wp-content/uploads/2017/11/Ross-Ponder-Quote-10.jpg&content_type=image&title=my+title&description=').attr('data-link', $href);
+ 				$(this).find('.facebook').attr('href', $href).attr('data-link', $href);
 
  				console.log('it\'s fired');
 
