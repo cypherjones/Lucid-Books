@@ -31,15 +31,16 @@ jQuery(document).ready(function($){
 
  			$i.on('shown.bs.modal', function(e){
 
- 				// let l = window.location.href,
- 				// 		t = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt'),
- 				// 		$href = 'http://www.facebook.com/sharer.php?u=' + l + '&amp;t=' + t;
+ 				let l = window.location.href,
+ 						t = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt'),
+ 						$href = 'http://www.facebook.com/sharer.php?u=' + l + '&amp;t=' + t;
 
+ 						$('meta[property="og:title"]').attr('content', t);
+						$('meta[name="twitter:title"]').attr('content', t);
 
+ 				// $href = l;
 
- 				// // $href = l;
-
- 				// $(this).find('.facebook').attr('href', $href).attr('data-link', $href);
+ 				$(this).find('.facebook').attr('href', $href).attr('data-link', $href);
 
  				console.log('it\'s fired');
 
@@ -52,8 +53,7 @@ jQuery(document).ready(function($){
 
 			let fbt = '';
 				
-			$('meta[property="og:title"]').attr('content', $title);
-			$('meta[name="twitter:title"]').attr('content', $title);
+			
 
 
 			// let $hrefTest = $(this).closest('.shareable-popup').find('.facebook').attr('href');
