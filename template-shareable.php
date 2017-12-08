@@ -215,7 +215,21 @@
                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <div class="shareable-box">
                                               <div class="share-me">
-                                                <?php social_warfare(); ?>
+                                                <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" data-link="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" title="Share on Facebook." class="js-social-share facebook">
+                                                  Facebook 
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="https://plus.google.com/share?url={<?php the_permalink();?>}" onclick="javascript:window.open(this.href,
+                                              '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="google">
+                                                  Google+
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="http://twitter.com/share?original_referer=/&amp;text=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Tweet this!" class="js-social-share twitter">
+                                                  Twitter
+                                                </a>
+                                              </li>
                                               </div>
                                               <div class="share-img-box">
                                                 <img src="<?php echo $shareImg['url'];?>" alt="<?php echo $shareImg['title'] ?>">
