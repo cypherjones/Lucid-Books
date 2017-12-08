@@ -33,13 +33,14 @@ jQuery(document).ready(function($){
 
 		$('.next-pop').on('click', function(){
 
-			let $title = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt');
+			let $title = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt'),
+			    fbt = '';
 				
 			$('meta[property="og:title"]').attr('content', $title);
 			$('meta[name="twitter:title"]').attr('content', $title);
 
 
-			let $hrefTest = $(this).closest('.shareable-popup').find('.facebook').attr('href', 'http://www.facebook.com/sharer.php?t='+$title);
+			let $hrefTest = $(this).closest('.shareable-popup').find('.facebook').attr('href', $title);
 
 			console.log($hrefTest);
 
