@@ -10,9 +10,9 @@ jQuery(document).ready(function($){
 	$('.share-container').each(function(){
 
 		$(this).find('.shareable-img', this).each(function(index, value){
-			// debug
-			// console.log(`${index}`);
+
 			$(this).attr('data-target', `#popup-${index}`);
+
 		});
 
 		$(this).find('.shareable-popup', this).each(function(index, value){
@@ -37,6 +37,13 @@ jQuery(document).ready(function($){
 				
 			$('meta[property="og:title"]').attr('content', $title);
 			$('meta[name="twitter:title"]').attr('content', $title);
+
+
+			let $hrefTest = $(this).closest('.facebook').attr('href');
+
+			console.log($hrefTest);
+
+
 
  		});
 
