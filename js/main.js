@@ -5,8 +5,7 @@ jQuery(document).ready(function($){
 			n = '',
 			p = '',
 			nId = '',
-			$i = '',
-			$title = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt');
+			$i = '';
 
 	$('.share-container').each(function(){
 
@@ -31,6 +30,8 @@ jQuery(document).ready(function($){
  			$i.find('.prev-pop').attr('href', `#popup-${p}`);
 
  			$i.on('shown.bs.modal', function(e){
+
+ 				$title = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt');
 
  				$(this).find('.facebook').attr('href', $title)
 
