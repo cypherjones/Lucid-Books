@@ -5,7 +5,8 @@ jQuery(document).ready(function($){
 			n = '',
 			p = '',
 			nId = '',
-			$i = '';
+			$i = '',
+			$title = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt');
 
 	$('.share-container').each(function(){
 
@@ -29,22 +30,30 @@ jQuery(document).ready(function($){
 			$i.find('.next-pop').attr('href', `#popup-${n}`);
  			$i.find('.prev-pop').attr('href', `#popup-${p}`);
 
+ 			$i.on('shown.bs.modal', function(e){
+
+ 				$(this).find('.facebook').attr('href', $title)
+
+ 				console.log('it\'s fired');
+
+ 			})
+
 		});
+
 
 		$('.next-pop').on('click', function(){
 
-			let $title = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt'),
-			    fbt = '';
+			let fbt = '';
 				
 			$('meta[property="og:title"]').attr('content', $title);
 			$('meta[name="twitter:title"]').attr('content', $title);
 
 
-			let $hrefTest = $(this).closest('.shareable-popup').find('.facebook').attr('href');
+			// let $hrefTest = $(this).closest('.shareable-popup').find('.facebook').attr('href');
 
-			$(this).closest('.shareable-popup').find('.facebook').attr('href', $title);
+			// $(this).closest('.shareable-popup').find('.facebook').attr('href', $title);
 
-			console.log($hrefTest);
+			// console.log($hrefTest);
 
 
 
