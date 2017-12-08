@@ -39,6 +39,7 @@ jQuery(document).ready(function($){
  						$('meta[property="og:title"]').attr('content', t);
 						$('meta[name="twitter:title"]').attr('content', t);
 						$('meta[property="og:image"]').attr('content', ti);
+						$('meta[property="og:image:secure_url"]').attr('content', ti);
 
  				// $href = l;
 
