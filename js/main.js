@@ -42,7 +42,7 @@ jQuery(document).ready(function($){
 
 			let $hrefTest = $(this).closest('.shareable-popup').find('.facebook').attr('href');
 
-			$(this).closest('.shareable-popup').find('.facebook').attr('href', 'bar');
+			$(this).closest('.shareable-popup').find('.facebook').attr('href', $title);
 
 			console.log($hrefTest);
 
