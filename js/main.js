@@ -40,7 +40,9 @@ jQuery(document).ready(function($){
 			$('meta[name="twitter:title"]').attr('content', $title);
 
 
-			let $hrefTest = $(this).closest('.shareable-popup').find('.facebook').attr('href', 'foo');
+			let $hrefTest = $(this).closest('.shareable-popup').find('.facebook').attr('href');
+
+			$(this).closest('.shareable-popup').find('.facebook').attr('foo', 'bar');
 
 			console.log($hrefTest);
 
