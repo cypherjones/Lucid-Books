@@ -33,11 +33,11 @@ jQuery(document).ready(function($){
 
  				let l = window.locaction.href,
  						t = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt'),
- 						l = 'http://www.facebook.com/sharer.php?u=' + l + '&amp;t=' + t;
+ 						$href = 'http://www.facebook.com/sharer.php?u=' + l + '&amp;t=' + t;
 
 
 
- 				$href = l;
+ 				// $href = l;
 
  				$(this).find('.facebook').attr('href', $href)
 
