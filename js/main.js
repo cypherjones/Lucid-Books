@@ -39,7 +39,7 @@ jQuery(document).ready(function($){
 			$('meta[name="twitter:title"]').attr('content', $title);
 
 
-			let $hrefTest = $(this).closest('.shareable-popup').find('.facebook').attr('href', `http://www.facebook.com/sharer.php?u=<?php the_permalink();?>$amp;t=${$title}`);
+			let $hrefTest = $(this).closest('.shareable-popup').find('.facebook').attr('href', `http://www.facebook.com/sharer.php?t=${$title}`);
 
 			console.log($hrefTest);
 
