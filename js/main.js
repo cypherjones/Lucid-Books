@@ -29,28 +29,16 @@ jQuery(document).ready(function($){
 			$i.find('.next-pop').attr('href', `#popup-${n}`);
  			$i.find('.prev-pop').attr('href', `#popup-${p}`);
 
- 			
-			// $index.on('shown.bs.modal', function(e){
-
-			// 		$metaTitle = $i.find('.share-img-box img').attr('alt');
-					
-			// 		// $('meta[property="og:title"]').attr('content', $metaTitle);
-
-			// 		console.log($metaTitle);
-			// });
-
 		});
+
 		$('.next-pop').on('click', function(){
-			
- 				$cid = $(this).closest('.shareable-popup').attr('id');
 
- 				$metaTitle = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt');
-					
-				$('meta[property="og:title"]').attr('content', $metaTitle);
+			let $title = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt');
+				
+			$('meta[property="og:title"]').attr('content', $title);
+			$('meta[name="twitter:title"]').attr('content', $title);
 
- 				console.log($cid);
-
- 			});
+ 		});
 
 
 		
