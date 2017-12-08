@@ -31,11 +31,15 @@ jQuery(document).ready(function($){
 
  			$i.on('shown.bs.modal', function(e){
 
- 				f = 'foo';
+ 				let l = window.locaction.href,
+ 						t = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt'),
+ 						l = 'http://www.facebook.com/sharer.php?u=' + l + '&amp;t=' + t;
 
- 				l = 'http://www.facebook.com/sharer.php?u='+f;
 
- 				$(this).find('.facebook').attr('href', l)
+
+ 				$href = l;
+
+ 				$(this).find('.facebook').attr('href', $href)
 
  				console.log('it\'s fired');
 
