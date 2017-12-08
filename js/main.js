@@ -39,7 +39,7 @@ jQuery(document).ready(function($){
 
  				// $href = l;
 
- 				$(this).find('.facebook').attr('href', $href)
+ 				$(this).find('.facebook').attr('href', $href).attr('data-link', $href);
 
  				console.log('it\'s fired');
 
