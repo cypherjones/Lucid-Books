@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
 
  			$i.on('shown.bs.modal', function(e){
 
- 				let l = (location).attr('href'),
+ 				let l = window.location.href,
  						t = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt'),
  						$href = 'http://www.facebook.com/sharer.php?u=' + l + '&amp;t=' + t;
 
