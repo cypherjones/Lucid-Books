@@ -40,7 +40,7 @@ jQuery(document).ready(function($){
 
  				// $href = l;
 
- 				$(this).find('.facebook').attr('href', $href).attr('data-link', $href);
+ 				$(this).find('.facebook').attr('href', 'https:/www.lucidbooks.net/shareable-images/?popup&network=facebook&hash=&content_url=https://www.lucidbooks.net/wp-content/uploads/2017/11/Ross-Ponder-Quote-10.jpg&content_type=image&title=my+title&description=').attr('data-link', $href);
 
  				console.log('it\'s fired');
 
