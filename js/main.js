@@ -41,8 +41,15 @@ jQuery(document).ready(function($){
 
 		});
 		$('.next-pop').on('click', function(){
- 				$cid = $(this).closest('.shareable-popup').attr('id')
+			
+ 				$cid = $(this).closest('.shareable-popup').attr('id');
+
+ 				$metaTitle = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt');
+					
+				$('meta[property="og:title"]').attr('content', $metaTitle);
+
  				console.log($cid);
+
  			});
 
 
