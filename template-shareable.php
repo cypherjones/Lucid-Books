@@ -215,7 +215,7 @@
                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <div class="shareable-box">
                                               <div class="share-me">
-                                                <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" data-link="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" title="Share on Facebook." class="js-social-share facebook">
+                                                <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" data-link="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" title="Share on Facebook." class="bfe-social-share facebook">
                                                   Facebook 
                                                 </a>
                                               </li>
@@ -226,7 +226,7 @@
                                                 </a>
                                               </li>
                                               <li>
-                                                <a href="http://twitter.com/share?original_referer=/&amp;text=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Tweet this!" class="js-social-share twitter">
+                                                <a href="http://twitter.com/share?original_referer=/&amp;text=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Tweet this!" class="bfe-social-share twitter">
                                                   Twitter
                                                 </a>
                                               </li>

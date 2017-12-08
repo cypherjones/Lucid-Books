@@ -40,7 +40,7 @@ jQuery(document).ready(function($){
 
  		});
 
-		$(".js-social-share").on("click", function(e) {
+		$(".bfe-social-share").on("click", function(e) {
       e.preventDefault();
       windowPopup($(this).attr("href"), 500, 300);
     });
@@ -48,7 +48,7 @@ jQuery(document).ready(function($){
  		function windowPopup(url, width, height) {
         // Calculate the position of the popup so
         // it’s centered on the screen.
-        var left = (screen.width / 2) - (width / 2),
+        let left = (screen.width / 2) - (width / 2),
             top = (screen.height / 2) - (height / 2);
         window.open(
           url,
