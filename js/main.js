@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
   	 FB.ui({
 	    method: 'share',
 	    display: 'popup',
-	    href: 'https://developers.facebook.com/docs/',
+	    href: 'https://www.lucidbooks.net/share.php',
 	  }, function(response){});
 
   })
