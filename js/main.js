@@ -55,9 +55,6 @@ jQuery(document).ready(function($){
 		$('.next-pop').on('click', function(){
 
 			let fbt = '';
-				
-			
-
 
 			// let $hrefTest = $(this).closest('.shareable-popup').find('.facebook').attr('href');
 
