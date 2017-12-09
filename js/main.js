@@ -10,6 +10,16 @@ jQuery(document).ready(function($){
     FB.getLoginStatus(updateStatusCallback);
   });
 
+  $('.facebook').on('click', function(){
+
+  	 FB.ui({
+	    method: 'share',
+	    display: 'popup',
+	    href: 'https://developers.facebook.com/docs/',
+	  }, function(response){});
+	  	
+  })
+
 	
 
 	let $n = ''.
@@ -55,7 +65,7 @@ jQuery(document).ready(function($){
 
  				// $href = l;
 
- 				$(this).find('.facebook').attr('href', $href).attr('data-link', $href);
+ 				// $(this).find('.facebook').attr('href', $href).attr('data-link', $href);
 
  				console.log('it\'s fired');
 
