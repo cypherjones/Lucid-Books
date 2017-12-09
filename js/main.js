@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
 	$.ajaxSetup({ cache: true });
   $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
     FB.init({
-      appId: '{284281862094433}',
+      appId: '284281862094433',
       version: 'v2.7' // or v2.1, v2.2, v2.3, ...
     });     
     $('#loginbutton,#feedbutton').removeAttr('disabled');
@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
 	    display: 'popup',
 	    href: 'https://developers.facebook.com/docs/',
 	  }, function(response){});
-	  	
+
   })
 
 	
