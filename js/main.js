@@ -34,7 +34,7 @@ jQuery(document).ready(function($){
  				let l = window.location.href,
  						t = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt'),
  						ti = $(this).closest('.shareable-popup').find('.share-img-box img').attr('src'),
- 						$href = 'http://www.facebook.com/sharer.php?u=' + l + '&amp;t=' + t;
+ 						$href = 'https://www.lucidbooks.net/share.php?u=' + l + '&amp;t=' + t;
 
  						$('meta[property="og:title"]').attr('content', t);
 						$('meta[name="twitter:title"]').attr('content', t);
