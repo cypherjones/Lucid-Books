@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Share
+ * Template Name: Share pop
  */
 
   get_header(); 
