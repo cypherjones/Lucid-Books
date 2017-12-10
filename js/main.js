@@ -20,20 +20,18 @@ jQuery(document).ready(function($){
 
   function shareOverrideOGMeta(overrideLink, overrideTitle, overrideDescription, overrideImage) {
 		FB.ui({
-			method: 'share_open_graph',
-			action_type: 'og.shares',
-			action_properties: JSON.stringify({
-				object: {
-					'og:url': overrideLink,
-					'og:title': overrideTitle,
-					'og:description': overrideDescription,
-					'og:image': overrideImage
-				}
-			})
-		},
-		function (response) {
-		// Action after response
-		});
+				method: 'feed',
+				link: overrideLink,
+				picture: overridePicture,
+				caption: overrideCaption,
+				title:  overrideTitle,
+				description: overrideDescription,
+				message: overrideMessage
+			},
+			function(response) {
+				//console.log(response);
+			}
+		);
 	}
 
 	let $n = '',
