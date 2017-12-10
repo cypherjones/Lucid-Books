@@ -214,7 +214,8 @@
                                           <div class="modal-content">
                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <div class="shareable-box">
-                                              <!-- <div class="share-me">
+                                              <div class="share-me">
+                                              <li>
                                                 <a href="https://www.lucidbooks.net/share.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" data-link="https://www.lucidbooks.net/share.php?=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" title="Share on Facebook." class="bfe-social-share facebook">Facebook</a>
                                               </li>
                                               <li>
@@ -227,8 +228,8 @@
                                                 <a href="http://twitter.com/share?original_referer=/&amp;text=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Tweet this!" class="bfe-social-share twitter">
                                                   Twitter
                                                 </a>
-                                              </li> -->
-                                              <div class="addthis_inline_share_toolbox"></div>
+                                              </li>
+                                              <!-- <div class="addthis_inline_share_toolbox"></div> -->
                                               </div>
                                               <div class="share-img-box">
                                                 <img src="<?php echo $shareImg['url'];?>" alt="<?php echo $shareImg['title'] ?>">
