@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
 
   function shareOverrideOGMeta(overrideLink, overrideTitle, overrideDescription, overrideImage) {
 		FB.ui({
-				method: 'feed',
+				method: 'popup',
 				link: overrideLink,
 				picture: overridePicture,
 				caption: overrideCaption,
