@@ -228,7 +228,7 @@
                                                   Twitter
                                                 </a>
                                               </li> -->
-                                              <div class="addthis_sharing_toolbox" data-url="<?php the_permalink(); ?>" data-title="<?php the_title_attribute(); ?>"></div>
+                                              <div class="addthis_inline_share_toolbox"></div>
                                               </div>
                                               <div class="share-img-box">
                                                 <img src="<?php echo $shareImg['url'];?>" alt="<?php echo $shareImg['title'] ?>">
