@@ -70,10 +70,10 @@ jQuery(document).ready(function($){
  						ti = $(this).closest('.shareable-popup').find('.share-img-box img').attr('src'),
  						$href = 'http://www.facebook.com/sharer.php?u=' + l + '/#' + index + '&amp;t=' + t;
 
- 						$('meta[property="og:title"]').attr('content', t);
-						$('meta[name="twitter:title"]').attr('content', t);
-						$('meta[property="og:image"]').attr('content', ti);
-						$('meta[property="og:image:secure_url"]').attr('content', ti);
+ 					// 	$('meta[property="og:title"]').attr('content', t);
+						// $('meta[name="twitter:title"]').attr('content', t);
+						// $('meta[property="og:image"]').attr('content', ti);
+						// $('meta[property="og:image:secure_url"]').attr('content', ti);
 
  				// $href = l;
 
