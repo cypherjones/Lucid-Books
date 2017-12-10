@@ -1,8 +1,5 @@
 jQuery(document).ready(function($){
 
-
-	
-
 	let $n = ''.
 			c = '',
 			n = '',
@@ -37,7 +34,7 @@ jQuery(document).ready(function($){
  				let l = window.location.href,
  						t = $(this).closest('.shareable-popup').find('.share-img-box img').attr('alt'),
  						ti = $(this).closest('.shareable-popup').find('.share-img-box img').attr('src'),
- 						$href = 'https://www.lucidbooks.net/share.php?u=' + l + '&amp;t=' + t;
+ 						$href = 'http://www.facebook.com/sharer.php?u=' + l + '/#' + index + '&amp;t=' + t;
 
  						$('meta[property="og:title"]').attr('content', t);
 						$('meta[name="twitter:title"]').attr('content', t);
@@ -46,7 +43,7 @@ jQuery(document).ready(function($){
 
  				// $href = l;
 
- 				// $(this).find('.facebook').attr('href', $href).attr('data-link', $href);
+ 				$(this).find('.facebook').attr('href', $href).attr('data-link', $href);
 
  				console.log('it\'s fired');
 
