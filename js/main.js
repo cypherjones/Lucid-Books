@@ -16,7 +16,14 @@ jQuery(document).ready(function($){
 	    method: 'share',
 	    display: 'popup',
 	    href: 'https://www.lucidbooks.net/share.php',
-	  }, function(response){});
+	  }, function(response){
+
+	  	if (response && !response.error_message) {
+      alert('Posting completed.');
+	    } else {
+	      alert('Error while posting.');
+	    }
+	  });
 
   })
 
