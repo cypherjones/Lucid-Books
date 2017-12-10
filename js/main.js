@@ -36,7 +36,7 @@ jQuery(document).ready(function($){
 		});
 	}
 
-	let $n = ''.
+	let $n = '',
 			c = '',
 			n = '',
 			p = '',
