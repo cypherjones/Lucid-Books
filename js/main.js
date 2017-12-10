@@ -34,6 +34,10 @@ jQuery(document).ready(function($){
 		);
 	}
 
+	$('.facebook').on('click', function(){
+		shareOverrideOGMeta();
+	})
+
 	let $n = '',
 			c = '',
 			n = '',
