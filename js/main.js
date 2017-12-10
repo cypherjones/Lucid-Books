@@ -21,12 +21,12 @@ jQuery(document).ready(function($){
   function shareOverrideOGMeta(overrideLink, overrideTitle, overrideDescription, overrideImage) {
 		FB.ui({
 				method: 'popup',
-				link: overrideLink,
-				picture: overridePicture,
-				caption: overrideCaption,
-				title:  overrideTitle,
-				description: overrideDescription,
-				message: overrideMessage
+				link: 'overrideLink',
+				picture: 'overridePicture',
+				caption: 'overrideCaption',
+				title:  'overrideTitle',
+				description: 'overrideDescription',
+				message: 'overrideMessage'
 			},
 			function(response) {
 				//console.log(response);
