@@ -281,6 +281,51 @@ add_action( 'wp_enqueue_scripts', 'custom_css');
     add_action( 'init', 'books_post_type', 0 );  
 
 
+ function shareable_post_type() {
+      $labels = array(
+        'name'                => _x( 'Shareables', 'Post Type General Name', 'lucid' ),
+        'singular_name'       => _x( 'Shareables', 'Post Type Singular Name', 'lucid' ),
+        'menu_name'           => __( 'Shareables', 'lazyj' ),
+        'parent_item_colon'   => __( 'Parent Shareable:', 'lucid' ),
+        'all_items'           => __( 'All Shareables', 'lucid' ),
+        'view_item'           => __( 'View Shareables', 'lucid' ),
+        'add_new_item'        => __( 'Add a New Shareable', 'lucid' ),
+        'add_new'             => __( 'Add Shareable', 'lucid' ),
+        'edit_item'           => __( 'Edit Shareables', 'lucid' ),
+        'update_item'         => __( 'Update Shareables', 'lucid' ),
+        'search_items'        => __( 'Search Shareables', 'lucid' ),
+        'not_found'           => __( 'Not found', 'lucid' ),
+        'not_found_in_trash'  => __( 'Not found in Trash', 'lucid' ),
+      );
+      $args = array(
+        'label'               => __( 'shareables', 'lucid' ),
+        'description'         => __( 'Post Type Description', 'lucid' ),
+        'labels'              => $labels,
+        'supports'            => array( 'title'),
+        'taxonomies'          => array( 'category', 'post_tag', 'thumbnail' ),
+        'hierarchical'        => false,
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 10,
+        'can_export'          => true,
+        'has_archive'         => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'capability_type'     => 'post',
+        'rewrite'             => array('slug' => 'shareables'),
+        'menu_icon'           => 'dashicons-share-alt2',
+      );
+      register_post_type( 'shareables', $args );
+    }
+  // Hook into the 'init' action
+  
+    add_action( 'init', 'sharable_post_type', 0 ); 
+
+
+
 // Add Sidebars
 
     function my_sidebar() {
