@@ -26,11 +26,12 @@
 
 				  $page_id = get_the_id();
 				  $featured_img = get_the_post_thumbnail_url( $page_id, 'full' );
+				  $link = get_the_permalink( );
 
 				  ?>
 
 				  <div class="col-md-4">
-				  	<a class="popup" href="<?php get_permalink(); ?>">
+				  	<a class="popup" href="<?php echo $link; ?>">
 				  		<img src="<?php echo $featured_img; ?>" alt="">
 				  	</a>
 				  </div>
