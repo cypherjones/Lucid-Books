@@ -30,7 +30,7 @@
 				  ?>
 
 				  <div class="col-md-4">
-				  	<a href="<?php get_permalink(); ?>" target="popup" onclick="window.open('<?php get_permalink( ); ?>','popup','width=600,height=600'); return false;">
+				  	<a class="popup" href="<?php get_permalink(); ?>" target="popup">
 				  		<img src="<?php echo $featured_img; ?>" alt="">
 				  	</a>
 				  </div>
