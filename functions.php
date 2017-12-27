@@ -150,7 +150,7 @@ add_action( 'wp_enqueue_scripts', 'custom_css');
 
 // Add Thumbnails to Posts
 
-  add_theme_support('post-thumbnails', array( 'post', 'page', 'gallery', 'books' ) );
+  add_theme_support('post-thumbnails', array( 'post', 'page', 'gallery', 'books', 'shareables' ) );
   
 // Content Limit
 
