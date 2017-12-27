@@ -17,16 +17,27 @@
   
   $share = new WP_Query( $args );
   
+  ?>
+	<div class="container">
+		<div class="row">
+			 <?php
+				  //get the page wrapper
+				  if ( $share->have_posts() ) : while ( $share->have_posts() ) : $share->the_post();
 
-  //get the page wrapper
-  if ( $share->have_posts() ) : while ( $share->have_posts() ) : $share->the_post();
+				  $page_id = get_the_id();
 
-  $page_id = get_the_id();
+				  ?>
 
-  the_title( );
+				  <div class="col-md-4">
+				  	<?php echo the_title( ); ?>
+				  </div>
 
-	endwhile; endif;
-  
+			<?php endwhile; endif; ?>
+		</div>
+	</div>
+ 
+	<?php
+
   // get the footer
   get_footer(); 
 
