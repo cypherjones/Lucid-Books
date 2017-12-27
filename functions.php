@@ -322,7 +322,7 @@ add_action( 'wp_enqueue_scripts', 'custom_css');
     }
   // Hook into the 'init' action
   
-    add_action( 'init', 'sharable_post_type', 0 ); 
+    add_action( 'init', 'shareable_post_type', 0 ); 
 
 
 
