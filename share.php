@@ -5,10 +5,25 @@
 
   get_header(); 
 
+  	/*
+  	 * The WordPress Query class.
+  	 *
+  	 * @link http://codex.wordpress.org/Function_Reference/WP_Query
+  	 */
+  	$args = array(
+  		'post_type' => 'shareables',  
+  		'post_status' => 'publish',
+  	);
+  
+  $share = new WP_Query( $args );
+  
+
   //get the page wrapper
-  if ( have_posts() ) : while ( have_posts() ) : the_post();
+  if ( $share->have_posts() ) : while ( $share->have_posts() ) : $share->the_post();
 
   $page_id = get_the_id();
+
+  the_title( );
 
 	endwhile; endif;
   
