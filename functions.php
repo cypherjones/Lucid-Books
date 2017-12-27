@@ -315,7 +315,7 @@ add_action( 'wp_enqueue_scripts', 'custom_css');
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
         'capability_type'     => 'post',
-        'rewrite'             => array('slug' => 'shareables'),
+        'rewrite'             => array('slug' => 'shareable-images'),
         'menu_icon'           => 'dashicons-share-alt2',
       );
       register_post_type( 'shareables', $args );
