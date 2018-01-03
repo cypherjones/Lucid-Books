@@ -17,7 +17,7 @@
    ?>
  <!-- footer of the page -->
     <div class="footer-area">
-      <?php if (is_page('get-started' ) || is_singlar()) : ?>
+      <?php if (is_page('get-started' ) || is_single()) : ?>
       <?php else : ?>
           <aside class="footer-banner">
             <div class="bg-stretch">
