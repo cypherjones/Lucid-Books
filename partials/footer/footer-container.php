@@ -23,7 +23,7 @@
 
         elseif (is_single(390)) :
 
-          get_template_part('partials/front-page/newsletter' );
+          // get_template_part('partials/front-page/newsletter' );
 
       ?>
       <?php else : ?>
