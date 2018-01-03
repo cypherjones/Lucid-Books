@@ -17,7 +17,7 @@
    ?>
  <!-- footer of the page -->
     <div class="footer-area">
-      <?php if (is_page('get-started' ))?>
+      <?php if (is_page('get-started' )) : ?>
 
       <?php 
 
