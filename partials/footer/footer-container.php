@@ -17,7 +17,15 @@
    ?>
  <!-- footer of the page -->
     <div class="footer-area">
-      <?php if (is_page('get-started' ) || is_single(390)) : ?>
+      <?php if (is_page('get-started' ))?>
+
+      <?php 
+
+        elseif (is_single(390)) :
+
+          get_template_part('partials/front-page/newsletter' );
+
+      ?>
       <?php else : ?>
           <aside class="footer-banner">
             <div class="bg-stretch">
