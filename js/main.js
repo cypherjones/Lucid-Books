@@ -9,7 +9,14 @@ jQuery(document).ready(function($){
       e.preventDefault();
       // grab the image
       let $code = $(this).html(),
-          $share = $(this).next('.share-me').html();
+          $share = $(this).next('.share-me').html(),
+          $pop = '<div class="pop">' +
+                    $code + $share +
+                  '</div>';
+
+      $('body').$pop;
+
+
       console.log($code + $share);
     })
   });
