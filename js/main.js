@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
       $('body').$pop;
 
 
-      console.log($code + $share);
+      // console.log($code + $share);
     })
   });
  		
