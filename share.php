@@ -33,10 +33,11 @@
 				  <div class="col-md-4">
 				  	<a class="popup" href="<?php echo $link; ?>">
 				  		<img src="<?php echo $featured_img; ?>" alt="">
-				  	</a>
-				  	<div class="share-me">
+				  		<span class="share-me">
 				  		<?php echo do_shortcode('[social_warfare]') ?>
-				  	</div>
+				  		</span>
+				  	</a>
+				  	
 				  </div>
 
 			<?php endwhile; endif; ?>
