@@ -301,7 +301,7 @@ add_action( 'wp_enqueue_scripts', 'custom_css');
         'label'               => __( 'shareables', 'lucid' ),
         'description'         => __( 'Post Type Description', 'lucid' ),
         'labels'              => $labels,
-        'supports'            => array( 'title', 'thumbnail'),
+        'supports'            => array( 'title', 'thumbnail', 'author'),
         'taxonomies'          => array( 'category', 'post_tag', 'thumbnail' ),
         'hierarchical'        => false,
         'public'              => true,
