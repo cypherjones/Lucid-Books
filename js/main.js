@@ -6,7 +6,8 @@ jQuery(document).ready(function($){
 
     $(this).on('click', function (e) {
       e.preventDefault();
-      console.log('we have lift off')
+      let $code = $(this).html();
+      console.log($code);
     })
   });
  		
