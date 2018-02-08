@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
                     $code + $share +
                   '</div>';
 
-      $('body').$pop;
+      $('body').append($pop);
 
 
       // console.log($code + $share);
