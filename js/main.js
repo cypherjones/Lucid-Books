@@ -9,8 +9,8 @@ jQuery(document).ready(function($){
       e.preventDefault();
       // grab the image
       let $code = $(this).html(),
-          $share = $(this).closest('.share-me').html();
-      console.log($code, $share);
+          $share = $code.closest('.share-me').html();
+      console.log($code + $share);
     })
   });
  		
