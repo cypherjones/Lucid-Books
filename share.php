@@ -34,6 +34,7 @@
 				  	<a class="popup" href="<?php echo $link; ?>">
 				  		<img src="<?php echo $featured_img; ?>" alt="">
 				  	</a>
+				  	<?php echo do_shortcode('[social_warfare]') ?>
 				  </div>
 
 			<?php endwhile; endif; ?>
