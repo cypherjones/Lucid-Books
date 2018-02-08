@@ -11,7 +11,9 @@ jQuery(document).ready(function($){
       let $code = $(this).html(),
           $share = $(this).next('.share-me').html(),
           $pop = '<div class="pop">' +
-                    $code + $share +
+                   '<div class="pop-content">' +
+                       $code + $share +
+                    '</div>' + 
                   '</div>';
 
       $('body').append($pop);
