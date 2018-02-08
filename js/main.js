@@ -5,9 +5,12 @@ jQuery(document).ready(function($){
     $('.share-me').hide()
 
     $(this).on('click', function (e) {
+      // don't open a new page
       e.preventDefault();
-      let $code = $(this).html();
-      console.log($code);
+      // grab the image
+      let $code = $(this).html(),
+          $share = $(this).closest('.share-me').hmtl();
+      console.log($code, $share);
     })
   });
  		
