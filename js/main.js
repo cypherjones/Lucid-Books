@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
   // add vars and pop up container
   $pop = '<div class="pop">' +
            '<div class="pop-content">' +
-               $code + $share +
+               // $code + $share +
             '</div>' + 
           '</div>';
 
