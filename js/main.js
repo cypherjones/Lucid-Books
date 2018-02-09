@@ -25,10 +25,14 @@ jQuery(document).ready(function($){
       let $i = $(this),
           $code = $i.find('img').attr('src'),
           $share = $i.next('.share-me').html();
-      // 
+      // add image to popup container
       if ( $('.pop').length > 0 ) {
+        // add image here
         $('#pop-img')
         .html(`<img src="${$code}">`);
+        // add share html
+        $('.pop-content')
+        .append($share);
       }
       // show the popup
       $('.pop').fadeIn(function(){
