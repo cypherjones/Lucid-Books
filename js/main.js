@@ -52,6 +52,8 @@ jQuery(document).ready(function($){
       $pop.fadeOut(function(){
         $(this).hide();
       });
+      let $currentCont = $('.pop-content').html();
+      $('.pop-content').remove($currentCont);
     };
   });
  		
