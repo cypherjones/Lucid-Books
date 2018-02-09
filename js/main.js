@@ -1,5 +1,8 @@
 jQuery(document).ready(function($){
 
+  // control - debugger
+  console.log('we\'re rolling')
+
 
   $('.popup').each(function(){
     // hide the share buttons
