@@ -13,8 +13,8 @@ jQuery(document).ready(function($){
   $('.pop').hide();
 
 
-
-  $('.popup').each(function(){
+  // popup driver
+  $('.popup').each(function() {
     // hide the share buttons
     $('.share-me').hide()
     // open the popup on click
@@ -23,12 +23,12 @@ jQuery(document).ready(function($){
       e.preventDefault();
       // grab the image
       let $code = $(this).html(),
-          $share = $(this).next('.share-me').html(),
+          $share = $(this).next('.share-me').html();
           
       // console.log($code + $share);
     })
   }); 
-
+  // close if we click outside of the popup
   $(document).mouseup(function(e){
     // pop up var
     let $popup = $('.pop-content'),
