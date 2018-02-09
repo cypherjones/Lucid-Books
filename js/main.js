@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
 
   $(document).mouseup(function(e){
     // pop up var
-    let $popup = $('.pop');
+    let $popup = $('.pop-content');
     // make sure they're there
     if (!$popup.is(e.target) && $popup.has(e.target).length === 0) {
       // now close each one
