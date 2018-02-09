@@ -6,6 +6,7 @@ jQuery(document).ready(function($){
   $pop = '<div class="pop">' +
            '<div class="pop-content">' +
               '<div id="pop-img"><img src="" alt=""></div>' +
+              '<div id="pop-share"></div>' +
             '</div>' + 
           '</div>';
 
@@ -31,8 +32,8 @@ jQuery(document).ready(function($){
         $('#pop-img')
         .html(`<img src="${$code}">`);
         // add share html
-        $('.pop-content')
-        .append($share);
+        $('#pop-share')
+        .html($share);
       }
       // show the popup
       $('.pop').fadeIn(function(){
