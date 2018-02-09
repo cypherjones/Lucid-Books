@@ -42,13 +42,13 @@ jQuery(document).ready(function($){
         $pop = $('.pop');
     // make sure they're there
     if (!$popup.is(e.target) && $popup.has(e.target).length === 0) {
-      // now close each one
-      $popup.fadeOut(function(){
-        $(this).hide();
-      });
-      $pop.fadeOut(function(){
-        $(this).hide();
-      });
+      // // now close each one
+      // $popup.fadeOut(function(){
+      //   $(this).hide();
+      // });
+      // $pop.fadeOut(function(){
+      //   $(this).hide();
+      // });
     };
   });
  		
