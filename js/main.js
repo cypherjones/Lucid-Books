@@ -37,8 +37,7 @@ jQuery(document).ready(function($){
       // console.log($code + $share);
 
     })
-  }); 
-  // close if we click outside of the popup
+    // close if we click outside of the popup
   $(document).mouseup(function(e){
     // pop up var
     let $popup = $('.pop-content'),
@@ -56,5 +55,7 @@ jQuery(document).ready(function($){
       $('.pop-content').remove($currentCont);
     };
   });
+  }); 
+
  		
 }); 
