@@ -27,11 +27,15 @@ jQuery(document).ready(function($){
 
   $(document).mouseup(function(e){
     // pop up var
-    let $popup = $('.pop-content');
+    let $popup = $('.pop-content'),
+        $pop = $('.pop');
     // make sure they're there
     if (!$popup.is(e.target) && $popup.has(e.target).length === 0) {
       // now close each one
       $popup.fadeOut(function(){
+        $(this).hide();
+      });
+      $pop.fadeOut(function(){
         $(this).hide();
       });
     };
