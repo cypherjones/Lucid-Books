@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
   // popup driver
   $('.popup').each(function() {
     // hide the share buttons
-    // $('.share-me').hide()
+    $('.share-me').hide()
     // open the popup on click
     $(this).on('click', function (e) {
       // don't open a new page
