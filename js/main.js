@@ -22,10 +22,17 @@ jQuery(document).ready(function($){
       // don't open a new page
       e.preventDefault();
       // grab the image
-      let $code = $(this).html(),
-          $share = $(this).next('.share-me').html();
-          
+      let $i = $(this),
+          $code = $i.html(),
+          $share = $i.next('.share-me').html();
+
+          $('.pop').fadeIn(function(){
+            $(this).show();
+          })
+
+
       // console.log($code + $share);
+
     })
   }); 
   // close if we click outside of the popup
