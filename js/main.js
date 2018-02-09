@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
   // add vars and pop up container
   $pop = '<div class="pop">' +
            '<div class="pop-content">' +
-              '<img src="" alt="">' +
+              '<div id="pop-img"><img src="" alt=""></div>' +
             '</div>' + 
           '</div>';
 
@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
           $share = $i.next('.share-me').html();
       // 
       if ( $('.pop').length > 0 ) {
-        $('.pop-content img')
+        $('#pop-img')
         .html(`<img src="${$code}">`);
       }
       // show the popup
