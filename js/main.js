@@ -2,6 +2,16 @@ jQuery(document).ready(function($){
 
   // control - debugger
   console.log('we\'re rolling')
+  // add vars and pop up container
+  $pop = '<div class="pop">' +
+           '<div class="pop-content">' +
+               $code + $share +
+            '</div>' + 
+          '</div>';
+
+  $('body').append($pop);
+  $('.pop').hide();
+
 
 
   $('.popup').each(function(){
@@ -14,13 +24,7 @@ jQuery(document).ready(function($){
       // grab the image
       let $code = $(this).html(),
           $share = $(this).next('.share-me').html(),
-          $pop = '<div class="pop">' +
-                   '<div class="pop-content">' +
-                       $code + $share +
-                    '</div>' + 
-                  '</div>';
-
-      $('body').append($pop);
+          
       // console.log($code + $share);
     })
   }); 
