@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
           '</div>';
 
   $('body').append($pop);
-  $('.pop').hide();
+  // $('.pop').hide();
 
 
   // popup driver
