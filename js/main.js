@@ -26,11 +26,11 @@ jQuery(document).ready(function($){
           $code = $i.html(),
           $share = $i.next('.share-me').html();
 
-          $('.pop').fadeIn(function(){
-            $(this).show();
-          })
-
-
+      $('.pop-content').append($code);
+      // show the popup
+      $('.pop').fadeIn(function(){
+        $(this).show();
+      })
       // console.log($code + $share);
 
     })
