@@ -2,8 +2,9 @@ jQuery(document).ready(function($){
 
 
   $('.popup').each(function(){
+    // hide the share buttons
     $('.share-me').hide()
-
+    // open the popup on click
     $(this).on('click', function (e) {
       // don't open a new page
       e.preventDefault();
@@ -17,10 +18,20 @@ jQuery(document).ready(function($){
                   '</div>';
 
       $('body').append($pop);
-
-
       // console.log($code + $share);
     })
   }); 
+
+  $(document).mouseup(function(e){
+    // pop up var
+    let $popup = $('.pop');
+    // make sure they're there
+    if (!$popup.is(e.target) && $popup.has(e.target).length === 0) {
+      // now close each one
+      $popup.fadeOut(function(){
+        $(this).hide();
+      });
+    };
+  });
  		
 }); 
