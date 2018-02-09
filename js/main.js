@@ -25,8 +25,11 @@ jQuery(document).ready(function($){
       let $i = $(this),
           $code = $i.html(),
           $share = $i.next('.share-me').html();
-
-      $('.pop-content').append($code);
+      // 
+      if ( $('.pop').length > 0 ) {
+        $('.pop-content')
+        .append($code + $share);
+      }
       // show the popup
       $('.pop').fadeIn(function(){
         $(this).show();
