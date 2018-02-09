@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
   // add vars and pop up container
   $pop = '<div class="pop">' +
            '<div class="pop-content">' +
-               // $code + $share +
+              '<img src="" alt="">' +
             '</div>' + 
           '</div>';
 
@@ -23,12 +23,12 @@ jQuery(document).ready(function($){
       e.preventDefault();
       // grab the image
       let $i = $(this),
-          $code = $i.html(),
+          $code = $i.find('img').attr('src'),
           $share = $i.next('.share-me').html();
       // 
       if ( $('.pop').length > 0 ) {
-        $('.pop-content')
-        .append($code + $share);
+        $('.pop-content img')
+        .html(`<img src="${$code}">`);
       }
       // show the popup
       $('.pop').fadeIn(function(){
