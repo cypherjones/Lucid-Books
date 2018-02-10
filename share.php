@@ -37,11 +37,12 @@
 				  		<img src="<?php echo $featured_img; ?>" alt="">
 				  	</a>
 				  	<div class="share-me">
-				  		<div class="twitter-share">
+				  		<div class="pop-share">
 				  			<?php 
 				  			// share plugin
 				  			$twitter = 'https://twitter.com/intent/tweet?text='.$s_title.'&amp;url='.$link.'&amp;via='.$foo;
-
+				  			$twitterURL = '<a class="twitter-share" href="'. $twitter .'" target="_blank">Twitter</a>';
+				  			echo $twitterURL;
 				  		 ?>
 				  		</div>
 				  	</div>
