@@ -60,7 +60,7 @@ jQuery(document).ready(function($){
     });
   });
 
-  $("#pop-share .nc_tweetContainer a").on("click", function(e) {
+  $('.pop-share').on("click", function(e) {
       e.preventDefault();
       windowPopup($(this).attr("href"), 500, 300);
     });
