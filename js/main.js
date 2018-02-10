@@ -63,6 +63,7 @@ jQuery(document).ready(function($){
   $('.share-btn').on("click", function(e) {
       e.preventDefault();
       windowPopup($(this).attr("href"), 500, 300);
+      console.log('foo');
     });
 
     function windowPopup(url, width, height) {
