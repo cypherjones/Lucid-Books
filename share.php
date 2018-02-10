@@ -27,12 +27,6 @@
 				  $page_id = get_the_id();
 				  $featured_img = get_the_post_thumbnail_url( $page_id, 'full' );
 				  $link = get_the_permalink( );
-				  $s_title = get_the_title();
-				  $foo = 'bar';
-
-				  // share plugin
-				  $twitter = 'https://twitter.com/intent/tweet?text='.$s_title.'&amp;url='.$link.'&amp;via='.$foo;
-				  $twitterURL = '<a class="twitter-share share-btn btn" href="'. $twitter .'" target="_blank">Twitter</a>';
 
 				  ?>
 
@@ -41,9 +35,7 @@
 				  		<img src="<?php echo $featured_img; ?>" alt="">
 				  	</a>
 				  	<div class="share-me">
-				  		<div class="pop-share-btn">
-				  			<?php echo $twitterURL; ?>
-				  		</div>
+				  		<?php echo do_shortcode('[social_warfare]') ?>
 				  	</div>
 				  </div>
 

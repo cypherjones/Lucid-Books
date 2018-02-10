@@ -41,7 +41,7 @@ jQuery(document).ready(function($){
       })
       // console.log($code + $share);
 
-       $('.share-btn').on("click", function(e) {
+       $('.nc_twitter a').on("click", function(e) {
       e.preventDefault();
       windowPopup($(this).attr("href"), 500, 300);
       console.log('foo');
