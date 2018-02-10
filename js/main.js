@@ -72,8 +72,8 @@ jQuery(document).ready(function($){
             top = (screen.height / 2) - (height / 2);
         window.open(
           url,
-          "",
-          "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
+          "popup",
+          "menubar=no,toolbar=no,resizable=no,scrollbars=no,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
         );
       };
  		
