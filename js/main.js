@@ -43,22 +43,38 @@ jQuery(document).ready(function($){
 
     })
     // close if we click outside of the popup
-  $(document).mouseup(function(e){
-    // pop up var
-    let $popup = $('.pop-content'),
-        $pop = $('.pop');
-    // make sure they're there
-    if (!$popup.is(e.target) && $popup.has(e.target).length === 0) {
-      // now close each one
-      // $popup.fadeOut(function(){
-      //   $(this).hide();
-      // });
-      $pop.fadeOut(function(){
-        $(this).hide();
-      });
-    };
+    $(document).mouseup(function(e){
+      // pop up var
+      let $popup = $('.pop-content'),
+          $pop = $('.pop');
+      // make sure they're there
+      if (!$popup.is(e.target) && $popup.has(e.target).length === 0) {
+        // now close each one
+        // $popup.fadeOut(function(){
+        //   $(this).hide();
+        // });
+        $pop.fadeOut(function(){
+          $(this).hide();
+        });
+      };
+    });
   });
-  }); 
 
+  $(".pop .nc_tweetContainer a").on("click", function(e) {
+      e.preventDefault();
+      windowPopup($(this).attr("href"), 500, 300);
+    });
+
+    function windowPopup(url, width, height) {
+        // Calculate the position of the popup so
+        // it’s centered on the screen.
+        let left = (screen.width / 2) - (width / 2),
+            top = (screen.height / 2) - (height / 2);
+        window.open(
+          url,
+          "",
+          "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
+        );
+      };
  		
 }); 
