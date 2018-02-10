@@ -32,7 +32,7 @@
 
 				  // share plugin
 				  $twitter = 'https://twitter.com/intent/tweet?text='.$s_title.'&amp;url='.$link.'&amp;via='.$foo;
-				  $twitterURL = '<a class="twitter-share btn" href="'. $twitter .'" target="_blank">Twitter</a>';
+				  $twitterURL = '<a class="twitter-share share-btn btn" href="'. $twitter .'" target="_blank">Twitter</a>';
 
 				  ?>
 
