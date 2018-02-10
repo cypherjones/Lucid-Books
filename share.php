@@ -30,6 +30,10 @@
 				  $s_title = get_the_title();
 				  $foo = 'bar';
 
+				  // share plugin
+				  $twitter = 'https://twitter.com/intent/tweet?text='.$s_title.'&amp;url='.$link.'&amp;via='.$foo;
+				  $twitterURL = '<a class="twitter-share btn" href="'. $twitter .'" target="_blank">Twitter</a>';
+
 				  ?>
 
 				  <div class="col-md-4">
@@ -37,13 +41,8 @@
 				  		<img src="<?php echo $featured_img; ?>" alt="">
 				  	</a>
 				  	<div class="share-me">
-				  		<div class="pop-share">
-				  			<?php 
-				  			// share plugin
-				  			$twitter = 'https://twitter.com/intent/tweet?text='.$s_title.'&amp;url='.$link.'&amp;via='.$foo;
-				  			$twitterURL = '<a class="twitter-share" href="'. $twitter .'" target="_blank">Twitter</a>';
-				  			echo $twitterURL;
-				  		 ?>
+				  		<div class="pop-share-btn">
+				  			<?php echo $twitterURL; ?>
 				  		</div>
 				  	</div>
 				  </div>
