@@ -60,7 +60,7 @@ jQuery(document).ready(function($){
     });
   });
 
-  $('.pop-share').on("click", function(e) {
+  $('.pop-share-btn a').on("click", function(e) {
       e.preventDefault();
       windowPopup($(this).attr("href"), 500, 300);
     });
