@@ -41,6 +41,24 @@ jQuery(document).ready(function($){
       })
       // console.log($code + $share);
 
+       $('.share-btn').on("click", function(e) {
+      e.preventDefault();
+      windowPopup($(this).attr("href"), 500, 300);
+      console.log('foo');
+    });
+
+    function windowPopup(url, width, height) {
+        // Calculate the position of the popup so
+        // it’s centered on the screen.
+        let left = (screen.width / 2) - (width / 2),
+            top = (screen.height / 2) - (height / 2);
+        window.open(
+          url,
+          "popup",
+          "menubar=no,toolbar=no,resizable=no,scrollbars=no,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
+        );
+      };
+
     })
     // close if we click outside of the popup
     $(document).mouseup(function(e){
@@ -60,22 +78,6 @@ jQuery(document).ready(function($){
     });
   });
 
-  $('.share-btn').on("click", function(e) {
-      e.preventDefault();
-      windowPopup($(this).attr("href"), 500, 300);
-      console.log('foo');
-    });
 
-    function windowPopup(url, width, height) {
-        // Calculate the position of the popup so
-        // it’s centered on the screen.
-        let left = (screen.width / 2) - (width / 2),
-            top = (screen.height / 2) - (height / 2);
-        window.open(
-          url,
-          "popup",
-          "menubar=no,toolbar=no,resizable=no,scrollbars=no,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
-        );
-      };
  		
 }); 
