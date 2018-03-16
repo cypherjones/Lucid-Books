@@ -11,8 +11,10 @@
   	 * @link http://codex.wordpress.org/Function_Reference/WP_Query
   	 */
   	$args = array(
-  		'post_type' => 'shareables',  
-  		'post_status' => 'publish',
+  		'post_type'      => 'shareables',  
+  		'post_status'    => 'publish',
+  		'posts_per_page' => -1,
+
   	);
   
   $share = new WP_Query( $args );
@@ -47,5 +49,6 @@
 
   // get the footer
   get_footer(); 
+
 
 ?>
