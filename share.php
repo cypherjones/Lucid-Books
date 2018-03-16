@@ -27,7 +27,7 @@
 				  if ( $share->have_posts() ) : while ( $share->have_posts() ) : $share->the_post();
 
 				  $page_id = get_the_id();
-				  $featured_img = get_the_post_thumbnail_url( $page_id, 'full' );
+				  $featured_img = get_the_post_thumbnail_url( $page_id, 'medium' );
 				  $link = get_the_permalink( );
 
 				  ?>
