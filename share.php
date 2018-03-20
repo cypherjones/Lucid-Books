@@ -22,7 +22,16 @@
   ?>
 	<div class="container">
 		<div class="row">
-			<?php echo do_shortcode('[ajax_load_more id="2567668385" repeater="template_1" post_type="shareables" posts_per_page="8" images_loaded="true"]') ?>
+			<?php 
+
+			$page_id = get_the_id();
+				  $featured_img = get_the_post_thumbnail_url( $page_id, 'full' );
+				  $link = get_the_permalink( );
+                  $share = social_warfare();
+
+				echo do_shortcode('[ajax_load_more id="2567668385" repeater="template_1" post_type="shareables" posts_per_page="8" images_loaded="true"]') 
+
+				?>
 		</div>
 	</div>
  

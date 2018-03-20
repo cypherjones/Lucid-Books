@@ -521,4 +521,9 @@ function template_body_class( $classes ) {
      
 }
 
+function enqueue_ajax_load_more() {
+   wp_enqueue_script('ajax-load-more'); // Already registered, just needs to be enqueued   
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_ajax_load_more' );
+
 ?>
