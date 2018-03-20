@@ -27,14 +27,14 @@
 				  if ( $share->have_posts() ) : while ( $share->have_posts() ) : $share->the_post();
 
 				  $page_id = get_the_id();
-				  $featured_img = get_the_post_thumbnail_url( $page_id, 'medium' );
+				  $featured_img = get_the_post_thumbnail_url( $page_id, 'full' );
 				  $link = get_the_permalink( );
 
 				  ?>
 
 				  <div class="col-md-4">
 				  	<a class="popup" href="<?php echo $link; ?>">
-				  		<img src="<?php echo $featured_img; ?>" alt="">
+				  		<img src="<?php echo $featured_img; ?>" alt="shareable image">
 				  	</a>
 				  	<div class="share-me">
 				  		<?php echo do_shortcode('[social_warfare]') ?>

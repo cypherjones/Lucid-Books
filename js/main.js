@@ -41,10 +41,10 @@ jQuery(document).ready(function($){
       })
       // console.log($code + $share);
 
-       $('.nc_tweetContainer a').on("click", function(e) {
-      e.preventDefault();
-      windowPopup($(this).attr("href"), 500, 300);
-      console.log('foo');
+      //  $('.nc_tweetContainer a').on("click", function(e) {
+      // e.preventDefault();
+      // windowPopup($(this).attr("href"), 500, 300);
+      // console.log('foo');
     });
 
     function windowPopup(url, width, height) {
