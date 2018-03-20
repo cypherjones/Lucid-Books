@@ -22,26 +22,7 @@
   ?>
 	<div class="container">
 		<div class="row">
-			 <?php
-				  //get the page wrapper
-				  if ( $share->have_posts() ) : while ( $share->have_posts() ) : $share->the_post();
-
-				  $page_id = get_the_id();
-				  $featured_img = get_the_post_thumbnail_url( $page_id, 'full' );
-				  $link = get_the_permalink( );
-
-				  ?>
-
-				  <div class="col-md-4">
-				  	<a class="popup" href="<?php echo $link; ?>">
-				  		<img src="<?php echo $featured_img; ?>" alt="shareable image">
-				  	</a>
-				  	<div class="share-me">
-				  		<?php echo do_shortcode('[social_warfare]') ?>
-				  	</div>
-				  </div>
-
-			<?php endwhile; endif; ?>
+			<?php do_shortcode('[ajax_load_more id="2567668385" repeater="template_1" post_type="shareables" posts_per_page="8" images_loaded="true"]') ?>
 		</div>
 	</div>
  
