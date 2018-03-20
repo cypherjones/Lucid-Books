@@ -22,7 +22,7 @@
   ?>
 	<div class="container">
 		<div class="row">
-			<?php do_shortcode('[ajax_load_more id="2567668385" repeater="template_1" post_type="shareables" posts_per_page="8" images_loaded="true"]') ?>
+			<?php echo do_shortcode('[ajax_load_more id="2567668385" repeater="template_1" post_type="shareables" posts_per_page="8" images_loaded="true"]') ?>
 		</div>
 	</div>
  
