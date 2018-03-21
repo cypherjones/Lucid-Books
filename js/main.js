@@ -60,7 +60,8 @@ jQuery(document).ready(function($){
           );
         };
 
-      })
+      $('.share-btn').on('click', windowPopup())
+
       // close if we click outside of the popup
       $(document).mouseup(function(e){
         // pop up var
