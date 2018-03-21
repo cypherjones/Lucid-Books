@@ -60,7 +60,7 @@ jQuery(document).ready(function($){
           );
         };
 
-
+      })
       // close if we click outside of the popup
       $(document).mouseup(function(e){
         // pop up var
