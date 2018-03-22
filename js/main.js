@@ -42,10 +42,18 @@ jQuery(document).ready(function($){
         })
         // console.log($code + $share);
 
-         $('.share-btn').on("click", function(e) {
-        e.preventDefault();
-        windowPopup($(this).attr("href"), 500, 300);
-        console.log('foo');
+        $('.share-btn').on('click', function(e){
+            
+          e.preventDefault();
+
+          windowPopup($(this).attr('href'), 500, 300); 
+
+        });
+
+        //  $('.nc_tweetContainer a').on("click", function(e) {
+        // e.preventDefault();
+        // windowPopup($(this).attr("href"), 500, 300);
+        // console.log('foo');
       });
 
       function windowPopup(url, width, height) {
@@ -60,6 +68,7 @@ jQuery(document).ready(function($){
           );
         };
 
+        $('.share-btn').on('click', windowPopup);
 
       });
       // close if we click outside of the popup
