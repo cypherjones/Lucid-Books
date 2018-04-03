@@ -5,7 +5,7 @@
 
   get_header(); 
 
-  // $post_ids = array();
+  $post_ids = array();
 
   	/*
   	 * The WordPress Query class.
@@ -23,9 +23,9 @@
   
   $share = new WP_Query( $args );
 
-  
-    // $post_ids[] = $post->ID;
-  
+  while ( $share->have_posts() ) : $share->the_post();
+    $post_ids[] = $post->ID;
+  endwhile; wp_reset_query();
   
   ?>
 	<div class="container">
