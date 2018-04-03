@@ -13,7 +13,7 @@
   	$args = array(
   		'post_type'      => 'shareables',  
   		'post_status'    => 'publish',
-  		'posts_per_page' => -1,
+  		'posts_per_page' => 1,
       'order_by' => 'rand'
 
   	);
