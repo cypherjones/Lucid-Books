@@ -30,7 +30,7 @@
   ?>
 	<div class="container">
 		<div class="row">
-			<?php echo do_shortcode('[ajax_load_more id="4349616249" repeater="template_1" post_in"'.implode(',', $post_ids) . '" orderby="post__in" posts_per_page="9" image_loaded="true" button_label="more sharables" button_loading_label="loading sharables"') ?>
+			<?php echo do_shortcode('[ajax_load_more id="4349616249" repeater="template_1" post_in="'.implode(',', $post_ids) . '" orderby="post__in" posts_per_page="9" image_loaded="true" button_label="more sharables" button_loading_label="loading sharables"') ?>
 		</div>
 	</div>
  
