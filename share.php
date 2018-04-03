@@ -23,9 +23,9 @@
   
   $share = new WP_Query( $args );
 
-  while ( $share->have_posts() ) : $share->the_post();
+  
     $post_ids[] = $post->ID;
-  endwhile; wp_reset_query();
+  
   
   ?>
 	<div class="container">
