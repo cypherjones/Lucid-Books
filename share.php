@@ -5,7 +5,7 @@
 
   get_header(); 
 
-  $post_ids = array();
+  $post_t_ids = array();
 
   	/*
   	 * The WordPress Query class.
@@ -31,7 +31,7 @@
   ?>
 	<div class="container">
 		<div class="row">
-			<?php echo do_shortcode('[ajax_load_more repeater="template_1" post__in="'.implode(',', $post_ids) . '" orderby="post__in" posts_per_page="9" button_label="more sharables" button_loading_label="loading sharables"]'); ?>
+			<?php echo do_shortcode('[ajax_load_more repeater="template_1" post__in="'.implode(',', $post_t_ids) . '" orderby="post__in" posts_per_page="9" button_label="more sharables" button_loading_label="loading sharables"]'); ?>
 		</div>
 	</div>
  
