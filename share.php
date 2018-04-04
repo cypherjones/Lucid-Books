@@ -13,7 +13,7 @@
   	 * @link http://codex.wordpress.org/Function_Reference/WP_Query
   	 */
   	$args = array(
-  		'post_type'  => array('sharables'),  
+  		'post_type'  => array('shareables'),  
       'order_by'   => 'rand',
   		'post_status'    => 'publish',
   		'posts_per_page' => -1,
@@ -31,7 +31,7 @@
   ?>
 	<div class="container">
 		<div class="row">
-			<?php echo do_shortcode('[ajax_load_more post_type="shareables" repeater="template_1" post__in="'.implode(',', $post_ids) . '" orderby="post__in" posts_per_page="9" image_loaded="true" button_label="more sharables" button_loading_label="loading sharables"]'); ?>
+			<?php echo do_shortcode('[ajax_load_more repeater="template_1" post__in="'.implode(',', $post_ids) . '" orderby="post__in" posts_per_page="9" image_loaded="true" button_label="more sharables" button_loading_label="loading sharables"]'); ?>
 		</div>
 	</div>
  
