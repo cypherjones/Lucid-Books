@@ -13,7 +13,7 @@
   	 * @link http://codex.wordpress.org/Function_Reference/WP_Query
   	 */
   	$args = array(
-  		'post_type'  => array('shareables'),  
+  		'post_type'  => 'shareables',  
       'order_by'   => 'rand',
   		'post_status'    => 'publish',
   		'posts_per_page' => -1,
