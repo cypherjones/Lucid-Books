@@ -14,7 +14,6 @@
   	 */
   	$args = array(
   		'post_type'  => 'shareables',  
-      'order_by'   => 'rand',
   		'post_status'    => 'publish',
   		'posts_per_page' => -1,
       'ignore_sticky_posts' => true,
@@ -31,7 +30,7 @@
   ?>
 	<div class="container">
 		<div class="row">
-			<?php echo do_shortcode('[ajax_load_more post_type="shareables" repeater="template_1" post__in="'.implode(',', $post_t_ids) . '" orderby="post__in" posts_per_page="9" button_label="more sharables" button_loading_label="loading sharables"]'); ?>
+			<?php echo do_shortcode('[ajax_load_more post_type="shareables" repeater="template_1" posts_per_page="9" button_label="more sharables" button_loading_label="loading sharables"]'); ?>
 		</div>
 	</div>
  
