@@ -94,11 +94,11 @@ function initCustomForms() {
 
 // align blocks height
 function initSameHeight() {
-	jQuery('.testimonial-lists').sameHeight({
-		elements: '.testimonial-block q',
-		flexible: true,
-		multiLine: true
-	});
+	// jQuery('.testimonial-lists').sameHeight({
+	// 	elements: '.testimonial-block q',
+	// 	flexible: true,
+	// 	multiLine: true
+	// });
 	// jQuery('.testimonial-lists').sameHeight({
 	// 	elements: '.testimonial-block',
 	// 	flexible: true,
