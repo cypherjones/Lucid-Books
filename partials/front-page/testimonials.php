@@ -38,7 +38,7 @@
       $testimony_image = $image['url'];
 
      ?>
-      <blockquote class="testimonial-block">
+      <blockquote class="testimonial-block" data-author="<?php echo $author; ?>">
         <div class="testimonial-holder">
           <q><?php echo $testimony; ?></q>
           <cite>
