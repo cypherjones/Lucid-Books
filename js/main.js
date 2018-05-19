@@ -93,7 +93,7 @@ jQuery(document).ready(function($){
 
   var quote = $('blockquote');
 
-  if (quote.attr('data-author') == 'Jim Essian') {
+  if (quote.find('data-author') == 'Jim Essian') {
     console.log('foo bars, baby');
   };
 
